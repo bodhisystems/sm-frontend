@@ -35,7 +35,7 @@ workflows:
   version: 2
   main:
     jobs:
-      - build_deploy_publish:
+      - build_and_test:
           context: default
           filters:
             branches:
