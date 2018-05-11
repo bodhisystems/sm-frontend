@@ -7,7 +7,6 @@
     "publish": "lerna publish --verbose",
     "publish:patch": "lerna publish --cd-version patch --yes",
     "build": "lerna run build",
-    "test": "lerna run test",
     "deploy:development": "lerna run deploy:development"
   },
   "devDependencies": {
