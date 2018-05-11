@@ -105,7 +105,7 @@ export default function register(
      provide() {
        // inject the style injector to be used by child components
        return {
-         injectStylesAtRoot: this.injectStyles.bind(this);
+         injectStylesAtRoot: this.injectStyles.bind(this)
        };
      }
    };
