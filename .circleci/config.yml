@@ -7,7 +7,7 @@ jobs:
   build_deploy:
     docker:
       # specify the version you desire here
-      - image: sm-frontend/ci-build-frontend:0.0.10
+      - image: circleci/node:7.10
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
