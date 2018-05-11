@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: bodhisystems/ci-build-frontend:0.0.10
+      - image: circleci/ci-build-frontend:0.0.10
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
