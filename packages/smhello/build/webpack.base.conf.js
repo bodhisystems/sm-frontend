@@ -1,5 +1,6 @@
 'use strict'
 const path = require('path')
+const webpack = require('webpack')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
@@ -77,6 +78,11 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    // fix for dependency issue in webcomponents polyfill
+    // https://github.com/webcomponents/webcomponentsjs/issues/794
+    new webpack.IgnorePlugin(/vertx/)
+  ],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).
