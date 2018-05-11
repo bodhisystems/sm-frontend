@@ -1,6 +1,6 @@
 # smhello
 
-> A Vue.js project
+> Subash Maharjan Portfolio Site -- A Vue.js Project
 
 ## Build Setup
 
