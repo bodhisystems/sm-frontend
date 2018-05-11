@@ -7,7 +7,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/ci-build-frontend:0.0.10
+      - image: sm-frontend/ci-build-frontend:0.0.10
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -30,3 +30,14 @@ jobs:
       - run: npm run bootstrap
       - run: npm run build
       - run: npm run deploy:development
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - build_deploy_publish:
+          context: default
+          filters:
+            branches:
+              only:
+                - master
