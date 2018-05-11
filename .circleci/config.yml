@@ -4,7 +4,7 @@
 #
 version: 2
 jobs:
-  build:
+  build_deploy:
     docker:
       # specify the version you desire here
       - image: sm-frontend/ci-build-frontend:0.0.10
@@ -35,7 +35,7 @@ workflows:
   version: 2
   main:
     jobs:
-      - build_and_test:
+      - build_deploy:
           context: default
           filters:
             branches:
