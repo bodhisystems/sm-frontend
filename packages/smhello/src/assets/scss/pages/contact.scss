@@ -1,0 +1,15 @@
+$page: '.page.contact-page';
+
+#{$page} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#{$page} .contact-page-inner {
+  width: 66%;
+}
+
+#{$page} .contact-page-cta {
+  text-align: center;
+}
