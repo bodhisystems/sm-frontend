@@ -1,0 +1,24 @@
+$page: '.page.home-page';
+
+#{$page} {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+#{$page} .page-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#{$page} .my-name {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+#{$page} .logo {
+  z-index: 1;
+}

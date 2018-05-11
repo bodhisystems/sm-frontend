@@ -1,0 +1,24 @@
+$page: '.page.work-page';
+
+#{$page} {
+  display: flex;
+}
+
+#{$page} .project-card {
+  flex: 1;
+}
+
+#{$page} .desktop-column, .mobile-column {
+  display: flex;
+  flex-direction: column;
+}
+
+#{$page} .desktop-column {
+  flex: 3;
+  background: lightgray;
+}
+
+#{$page} .mobile-column {
+  flex: 2;
+  background: lightgray;
+}

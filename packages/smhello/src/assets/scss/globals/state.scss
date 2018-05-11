@@ -1,0 +1,7 @@
+$state: 'body';
+
+$home-page: $state + '.home';
+$about-page: $state + '.about';
+$work-page: $state + '.work';
+$experiments-page: $state + '.experiments';
+$contact-page: $state + '.contact';

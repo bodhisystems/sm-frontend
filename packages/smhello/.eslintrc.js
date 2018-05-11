@@ -48,12 +48,12 @@ module.exports = {
     'no-param-reassign': [
       'error',
       {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'state', // for vuex state
-          'acc', // for reduce accumulators
-          'e' // for e.returnvalue
-        ]
+        props: false,
+        // ignorePropertyModificationsFor: [
+        //   'state', // for vuex state
+        //   'acc', // for reduce accumulators
+        //   'e' // for e.returnvalue
+        // ]
       }
     ],
     // allow optionalDependencies

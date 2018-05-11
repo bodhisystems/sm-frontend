@@ -1,0 +1,20 @@
+$page: '.page.project-page';
+
+#{$page} .project-header {
+  padding: 15px 0;
+}
+
+#{$page} .project-title {
+  margin: 30px 0;
+  text-align: center;
+}
+
+#{$page} .close-project {
+  width: 25px;
+  height: 25px;
+  margin: 0 15px 0 auto;
+  cursor: pointer;
+  .close-icon {
+    stroke: $blue;
+  }
+}

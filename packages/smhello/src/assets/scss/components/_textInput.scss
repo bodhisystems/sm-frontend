@@ -1,0 +1,157 @@
+$input: '.text-input';
+$area: '.text-field';
+
+$border-color: $blue;
+$border-width: 2px;
+$error-color: #F44336;
+
+
+#{$input}, #{$area} {
+  position: relative;
+  padding: 24px 0;
+}
+
+
+#{$input}, #{$area} {
+  .text-input--inner {
+    position: relative;
+    border-bottom: 2px solid #273b4e;
+  }
+}
+
+#{$input} .text-input--inner {
+  height: 48px;
+}
+
+#{$input}, #{$area} {
+  .input-wrap {
+    position: relative;
+    height: 100%;
+    padding: 0 12px;
+  }
+}
+
+#{$area} .input-wrap {
+  padding-top: 12px;
+}
+
+#{$input}, #{$area} {
+  .placeholder-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+#{$area} .placeholder-wrap {
+  align-items: flex-end;
+}
+
+#{$input}, #{$area} {
+  .input-placeholder {
+    line-height: 1.5;
+    color: $blue;
+    padding: 12px;
+    transition: opacity .2s linear, transform .2s ease-out;
+  }
+}
+
+#{$input} input, #{$area} textarea {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: $blue;
+  background-color: rgba(0,0,0,0);
+}
+
+#{$area} textarea {
+  height: 76px;
+  max-width: 100%;
+  max-height: 150px;
+}
+
+#{$input}, #{$area} {
+  .error-message {
+    margin: 6px 0 0;
+    color: $error-color;
+  }
+}
+
+#{$area} .error-message {
+  position: absolute;
+  top: 100%;
+}
+
+#{$input}, #{$area} {
+  .input-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+#{$input}, #{$area} {
+  .input-right {
+    border-right: $border-width solid $border-color;
+    transform-origin: center bottom;
+    transform: scaleY(0);
+    transition: transform .15s ease-out .3s;
+  }
+}
+
+#{$input}, #{$area} {
+  .input-top {
+    border-top: $border-width solid $border-color;
+    transform-origin: right center;
+    transform: scaleX(0);
+    transition: transform .15s ease-out .15s;
+  }
+}
+
+#{$input}, #{$area} {
+  .input-left {
+    border-left: $border-width solid $border-color;
+    transform-origin: center top;
+    transform: scaleY(0);
+    transition: transform .15s ease-out;
+  }
+}
+
+#{$input}.focused, #{$area}.focused {
+  .input-right {
+    transform: scaleY(1);
+    transition: transform .15s ease-out;
+  }
+  .input-top {
+    transform: scaleX(1);
+  }
+  .input-left {
+    transform: scaleY(1);
+    transition: transform .15s ease-out .3s;
+  }
+  .input-placeholder {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+}
+
+
+#{$input}.error, #{$area}.error {
+  .input-right, .input-left, .input-top {
+    border-color: $error-color;
+  }
+  .text-input--inner {
+    border-color: $error-color;
+  }
+}

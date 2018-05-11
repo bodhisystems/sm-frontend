@@ -1,24 +1,18 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
+import ScrollView from 'vue-scrollview'
 import flexboxgridStyles from "flexboxgrid/dist/flexboxgrid.css";
 
 // import icons we use
 import Icon from "vue-awesome/components/Icon";
-import "vue-awesome/icons/car";
-import "vue-awesome/icons/ship";
-import "vue-awesome/icons/umbrella";
-import "vue-awesome/icons/motorcycle";
-import "vue-awesome/icons/home";
-import "vue-awesome/icons/heart";
-import "vue-awesome/icons/check";
 
 // import the custom element registration function, this is separated out so
 // that we can someday share it in a library, to be used by multiple ui
 // components that follow this same pattern
 import { registerCustomElement } from "./customElement";
 
-import devCss from "./assets/dev.scss";
+import devCss from "./assets/scss/main.scss";
 import componentCss from "./assets/component.scss";
 import Component from './Component';
 import routerFactory from './router';
@@ -27,7 +21,7 @@ import "./i18n";
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);
-
+Vue.use(ScrollView)
 // perform basic store initialization, i.e. loading partners, etc.
 // store.dispatch('shared/init');
 
@@ -107,12 +101,25 @@ registerCustomElement(Component, {
     ]
 });
 
+
+// global event bus
+Object.defineProperty(Vue.prototype, '$bus', {
+  get() {
+    return this.$root.bus
+  },
+})
+
+const bus = new Vue({})
+
 // if in development mode, inject the component into the dom
 if (isDevelopment) {
   // eslint-disable-next-line no-new
   new Vue({
     el: "#app",
     template: `<div><${componentName} id="component" config="development-local" :app-context="appContext" /></div>`,
+    data: {
+      bus,
+    },
     computed: {
       appContext() {
         return {

@@ -1,0 +1,46 @@
+$page: '.page.service-outline-page';
+
+#{$page} {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $blue;
+}
+
+#{$page}.service-showing {
+  justify-content: flex-end;
+}
+
+#{$page} .service-headline-wrap {
+  max-width: 50%;
+}
+
+#{$page} .service-headline {
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  .bold {
+    font-family: $overpass;
+    color: #fff;
+  }
+}
+
+#{$page} .service-container {
+  height: 66%;
+  width: 75%;
+  padding: 60px;
+  background: #fff;
+  transform-origin: right center;
+}
+
+#{$page} .offering-title {
+  margin-top: 0;
+}
+
+.expand-left-enter-active {
+  transition: transform .3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.expand-left-enter {
+  transform: scaleX(0);
+}
