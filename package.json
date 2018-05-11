@@ -1,6 +1,17 @@
 {
-	"devDependencies": {
-		"husky": "^0.14.3",
-		"lerna": "^2.11.0"
-	}
+  "scripts": {
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "updated": "lerna updated",
+    "precommit": "lerna run precommit",
+    "publish": "lerna publish --verbose",
+    "publish:patch": "lerna publish --cd-version patch --yes",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "deploy:development": "lerna run deploy:development"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lerna": "^2.11.0"
+  }
 }
