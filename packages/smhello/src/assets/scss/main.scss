@@ -1960,17 +1960,17 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /* animate .home-content__main
  * ------------------------------------------------------------------- */
 
-html.ss-preload .home-content__main {
+.ss-preload .home-content__main {
     opacity: 0;
 }
 
-html.ss-loaded .home-content__main {
+.ss-loaded .home-content__main {
     animation-duration: 2s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
 
-html.no-csstransitions .home-content__main {
+.no-csstransitions .home-content__main {
     opacity: 1;
 }
 
