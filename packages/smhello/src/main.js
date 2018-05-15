@@ -20,7 +20,6 @@ import "./i18n";
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);
-Vue.use(ScrollView)
 // perform basic store initialization, i.e. loading partners, etc.
 // store.dispatch('shared/init');
 
