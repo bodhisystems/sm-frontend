@@ -1,30 +1,11 @@
 <template>
-  <section class="navigation" :class="{ flipped }">
-    <div class="navigation-inner" @click="navigate">
-      <p class="page-title">{{ to }}</p>
-      <svg xmlns="http://www.w3.org/2000/svg" width="8" height="30" class="arrow">
-        <path fill="#273B4E" fill-rule="evenodd" stroke="#273B4E" d="M4 1v25m0 0l3-10.8H1L4 26z" stroke-linecap="square"/>
-      </svg>
-    </div>
-  </section>
+  <nav class="header-nav-wrap">
+      <ul class="header-nav">
+          <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+          <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+          <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+          <li><a class="smoothscroll"  href="#blog" title="blog">Blog</a></li>
+          <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
+      </ul>
+  </nav>
 </template>
-
-<script>
-export default {
-  methods: {
-    navigate() {
-      this.$router.push({ name: this.to })
-    }
-  },
-  props: {
-    to: {
-      type: String,
-      required: true
-    },
-    flipped: {
-      type: Boolean,
-      default: () => false
-    }
-  }
-}
-</script>

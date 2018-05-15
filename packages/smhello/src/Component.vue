@@ -1,86 +1,51 @@
 <template>
-  <div>
-    <section class="layout">
-      <article class="left">
-        <transition name="fade">
-          <Navigation :to="previous" v-if="previous" :flipped="true"/>
-        </transition>
-        <transition name="fade" mode="out-in">
-          <router-view name="left" class="page"></router-view>
-        </transition>
-        <transition name="fade">
-          <Navigation :to="next" v-if="next" />
-        </transition>
-      </article>
-      <article class="right">
-        <transition :name="rightTransition">
-          <router-view name="right" class="page"></router-view>
-        </transition>
-      </article>
-    </section>
-    <transition name="fade">
-      <router-view name="overlay" class="overlay page"></router-view>
-    </transition>
-  </div>
+  <section class="layout">
+    <Header />
+    <Home />
+    <About />
+    <Works />
+    <Testimonials />
+    <Blog />
+    <Cta />
+    <Stats />
+    <Contact />
+    <Footer />
+    <PhotoSwipe />
+    <!-- <div id="preloader">
+        <div id="loader"></div>
+    </div> -->
+  </section>
 </template>
 
 <script>
-//import { mapState, mapActions } from 'vuex'
-import { addClass, removeClass } from './util/helpers'
+// Shared Components
+import Cta from './components/shared/Cta'
+import Footer from './components/shared/Footer'
+import Header from './components/shared/Header'
+import PhotoSwipe from './components/shared/PhotoSwipe'
+import Stats from './components/shared/Stats'
+import Testimonials from './components/shared/Testimonials'
 
-import Navigation from './components/lib/Navigation'
+// Pages
+import About from './components/pages/About'
+import Blog from './components/pages/Blog'
+import Contact from './components/pages/Contact'
+import Home from './components/pages/Home'
+import Works from './components/pages/Works'
 
 export default {
   components: {
-    Navigation
-  },
-  data() {
-    return {
-      next: false,
-      previous: false,
-      rightTransition: 'slide-up',
-      currentRouteIndex: undefined,
-      navigationRoutes: undefined
-    }
-  },
-  watch: {
-    $route(to, from) {
-      this.routeBodyClasser(to, from)
-      if (!to.meta.excludeFromNav) {
-        this.setNavigation()
-        this.setRouteTransition(from)
-      }
-    },
-  },
-  methods: {
-    routeBodyClasser(to, from) {
-      const body = document.getElementsByTagName('body')[0]
-      if (from) removeClass(body, from.name)
-      addClass(body, to.name)
-    },
-    setNavigation() {
-      this.currentRouteIndex = this.getRouteIndex(this.navigationRoutes, this.$route)
-      const previousRoute = this.navigationRoutes.slice(0, this.currentRouteIndex).pop()
-      const nextRoute = this.navigationRoutes.slice(this.currentRouteIndex + 1)[0]
-      this.previous = (previousRoute) ? previousRoute.name : false
-      this.next = (nextRoute) ? nextRoute.name : false
-    },
-    setRouteTransition(from) {
-      this.rightTransition = (this.getRouteIndex(this.navigationRoutes, from) < this.currentRouteIndex)
-        ? 'slide-up'
-        : 'slide-down'
-    },
-    getRouteIndex(routes, { name }) {
-      return routes.findIndex(route => route.name === name)
-    },
-    setNavigationRoutes() {
-      this.navigationRoutes = this.$router.options.routes.filter(route => !route.meta || !route.meta.excludeFromNav)
-    }
-  },
-  created() {
-    this.routeBodyClasser(this.$route, undefined)
-    this.setNavigationRoutes()
-    this.setNavigation()
+    Cta,
+    Footer,
+    Header,
+    PhotoSwipe,
+    Stats,
+    Testimonials,
+    About,
+    Blog,
+    Contact,
+    Home,
+    Works,
   }
 }
 </script>
