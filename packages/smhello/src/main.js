@@ -1,8 +1,6 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue';
-import ScrollView from 'vue-scrollview'
-import flexboxgridStyles from "flexboxgrid/dist/flexboxgrid.css";
 
 // import icons we use
 import Icon from "vue-awesome/components/Icon";
@@ -12,8 +10,9 @@ import Icon from "vue-awesome/components/Icon";
 // components that follow this same pattern
 import { registerCustomElement } from "./customElement";
 
-import devCss from "./assets/scss/main.scss";
-import componentCss from "./assets/component.scss";
+import baseCss from "./assets/scss/base.scss";
+import vendorCss from "./assets/scss/vendor.scss";
+import mainCss from "./assets/scss/main.scss";
 import Component from './Component';
 import routerFactory from './router';
 import store from './store';
@@ -90,12 +89,13 @@ registerCustomElement(Component, {
 
         mounted() {
           // inject styles
-          this.injectStyles(componentCss);
-          this.injectStyles(flexboxgridStyles);
+          this.injectStyles(baseCss);
+          this.injectStyles(vendorCss);
+          this.injectStyles(mainCss);
 
-          if (isDevelopment) {
-            this.injectStyles(devCss);
-          }
+          // if (isDevelopment) {
+          //   this.injectStyles(devCss);
+          // }
         }
       }
     ]
