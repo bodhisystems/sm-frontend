@@ -1,23 +1,32 @@
 <template>
-  <section class="layout">
-    <Header />
-    <Home />
-    <About />
-    <Works />
-    <Testimonials />
-    <Blog />
-    <Cta />
-    <Stats />
-    <Contact />
-    <Footer />
-    <PhotoSwipe />
-    <!-- <div id="preloader">
-        <div id="loader"></div>
-    </div> -->
-  </section>
+  <div :class="loaderClass">
+    <section class="layout">
+      <Header />
+      <Home />
+      <About />
+      <Works />
+      <Testimonials />
+      <Blog />
+      <Cta />
+      <Stats />
+      <Contact />
+      <Footer />
+      <PhotoSwipe />
+      <transition name="fade">
+        <div id="preloader" v-if="isPreloading">
+          <transition name="fade">
+            <div id="loader">
+              <bounce-loader v-if="loading" :loading="loading" :color="color" :size="size"></bounce-loader>
+            </div>
+          </transition>
+        </div>
+      </transition>
+    </section>
+  </div>
 </template>
 
 <script>
+
 // Shared Components
 import Cta from './components/shared/Cta'
 import Footer from './components/shared/Footer'
@@ -33,7 +42,27 @@ import Contact from './components/pages/Contact'
 import Home from './components/pages/Home'
 import Works from './components/pages/Works'
 
+//import { addClass, removeClass } from './util/helpers'
+
 export default {
+  data() {
+    return {
+      isPreloading: true,
+      loading: true,
+      color: "#ff0000",
+      size: "45px",
+      loaderClass: 'ss-preload'
+    }
+  },
+  mounted() {
+    setTimeout(()=>{
+      this.loading = false
+      setTimeout(()=>{
+        this.isPreloading = false
+        this.loaderClass = 'ss-loaded'
+      }, 300)
+    }, 300);
+  },
   components: {
     Cta,
     Footer,
@@ -49,3 +78,16 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" module>
+  .fade {
+    &-enter, &-leave-to {
+      opacity: 0;
+    }
+    &-enter, &-leave {
+      &-active {
+        transition: opacity .5s;
+      }
+    }
+  }
+</style>

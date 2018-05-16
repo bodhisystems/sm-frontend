@@ -4,7 +4,7 @@ import Vue from 'vue';
 
 // import icons we use
 import Icon from "vue-awesome/components/Icon";
-
+import BounceLoader from 'vue-spinner/src/BounceLoader'
 // import the custom element registration function, this is separated out so
 // that we can someday share it in a library, to be used by multiple ui
 // components that follow this same pattern
@@ -20,6 +20,7 @@ import "./i18n";
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);
+Vue.component("bounce-loader", BounceLoader);
 // perform basic store initialization, i.e. loading partners, etc.
 // store.dispatch('shared/init');
 
