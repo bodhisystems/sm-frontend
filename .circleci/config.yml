@@ -30,6 +30,8 @@ jobs:
       - run: npm run bootstrap
       - run: npm run build
       - run: npm run deploy:development
+      # publish
+      - run: npm run publish:patch
 
 workflows:
   version: 2
