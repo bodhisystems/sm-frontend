@@ -4,7 +4,7 @@
           <div class="col-full">
 
               <div class="footer-logo">
-                  <a class="footer-site-logo" href="#0"><img src="../../assets/images/logo.png" alt="Homepage"></a>
+                  <a class="footer-site-logo" href="#0"><img src="../../../static/images/logo.png" alt="Homepage"></a>
               </div>
 
               <ul class="footer-social">
