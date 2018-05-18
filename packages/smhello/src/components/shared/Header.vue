@@ -3,7 +3,6 @@
     <header class="s-header" :class="{ 'is-light': isFixed, 'is-primary': !isFixed }">
         <Logo />
         <Navigation />
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
     </header>
   </fixed-header>
 
@@ -28,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   .s-header {
     position: fixed;
     width: 100%;
