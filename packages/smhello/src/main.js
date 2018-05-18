@@ -17,6 +17,9 @@ import Component from './Component';
 import routerFactory from './router';
 import store from './store';
 import "./i18n";
+import {VueMasonryPlugin} from 'vue-masonry';
+
+Vue.use(VueMasonryPlugin)
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);

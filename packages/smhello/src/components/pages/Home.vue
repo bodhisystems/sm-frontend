@@ -1,5 +1,5 @@
 <template>
-  <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+  <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="../../../static/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
        <Overlay />
 

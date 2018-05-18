@@ -63,6 +63,7 @@
 //@import "iconic/iconmonstr-iconic-font.scss";
 //@import "fonts.scss";
 
+$imagePath: '../../../static';
 
 
 /* ===================================================================
@@ -2618,7 +2619,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .s-testimonials {
     background-color: #0D0A0B;
-    background-image: url("../images/testimonial-bg.jpg");
+    background-image: url($imagePath + "/images/testimonial-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 9.6rem;
@@ -2962,7 +2963,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .stats__col--highlight {
-    background: #111111 url("../images/count-bg.jpg");
+    background: #111111 url($imagePath + "/images/count-bg.jpg");
     background-size: 175px 175px;
     position: relative;
 }
@@ -3043,7 +3044,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-image: url($imagePath + "/images/contact-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 13.2rem;
