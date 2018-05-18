@@ -38,7 +38,7 @@
       })
     },
     methods: {
-      setIsVisible(event) {
+      setIsVisible() {
         this.windowWidth = document.documentElement.clientWidth;
         if(this.windowWidth > 800) {
           this.isMobile = false
