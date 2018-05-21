@@ -46,8 +46,8 @@
               infinite: true,
               slidesToShow: 2,
               slidesToScroll: 1,
-              prevArrow: "<div class=\'slick-prev\'><i class=\'im im-arrow-left\' aria-hidden=\'true\'></i></div>",
-              nextArrow: "<div class=\'slick-next\'><i class=\'im im-arrow-right\' aria-hidden=\'true\'></i></div>",
+              prevArrow: "<div class='slick-prev'><i class='im im-arrow-left' aria-hidden='true'></i></div>",
+              nextArrow: "<div class='slick-next'><i class='im im-arrow-right' aria-hidden='true'></i></div>",
               pauseOnFocus: false,
               autoplaySpeed: 1500,
               responsive: [
