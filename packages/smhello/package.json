@@ -26,6 +26,7 @@
     "vue-masonry": "^0.11.1",
     "vue-router": "^3.0.1",
     "vue-scrollview": "^3.0.1",
+    "vue-slick": "^1.1.12",
     "vuex": "^3.0.1",
     "vuex-i18n": "^1.10.5",
     "vuex-persistedstate": "^2.5.2"
