@@ -1,5 +1,5 @@
 <template>
-  <div :class="loaderClass" v-waypoint="{ active: true, callback: onWaypoint, options: intersectionOptions }">
+  <div :class="loaderClass">
     <section class="layout">
       <Header />
       <Home />
@@ -52,25 +52,10 @@ export default {
       color: "#ff0000",
       size: "45px",
       loaderClass: 'ss-preload',
-      intersectionOptions: {
-        root: null,
-        rootMargin: '0px 0px 0px 0px',
-        thresholds: 1.0
-      }
     }
   },
   methods: {
-    onWaypoint({ going, direction }) {
-      // going: in, out
-      // direction: top, right, bottom, left
-      if (going === this.$waypointMap.GOING_IN) {
-        console.log('waypoint going in!')
-      }
 
-      if (direction === this.$waypointMap.DIRECTION_TOP) {
-        console.log('waypoint going top!')
-      }
-    }
   },
   mounted() {
     setTimeout(()=>{
@@ -80,13 +65,6 @@ export default {
         this.loaderClass = 'ss-loaded'
       }, 300)
     }, 300);
-
-    // const targetSections = {
-    //   root: document.querySelector('.target-section'),
-    //   rootMargin: '0px 0px 0px 0px',
-    //   thresholds: 1.0
-    // };
-    // let observer = new IntersectionOptions(callback, targetSections);
   },
   components: {
     Cta,

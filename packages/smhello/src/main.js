@@ -18,10 +18,6 @@ import routerFactory from './router';
 import store from './store';
 import "./i18n";
 import {VueMasonryPlugin} from 'vue-masonry';
-import VueWaypoint from 'vue-waypoint'
-
-// Waypoint plugin
-Vue.use(VueWaypoint)
 
 Vue.use(VueMasonryPlugin)
 
