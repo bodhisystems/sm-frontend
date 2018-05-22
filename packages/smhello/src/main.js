@@ -18,8 +18,10 @@ import routerFactory from './router';
 import store from './store';
 import "./i18n";
 import {VueMasonryPlugin} from 'vue-masonry';
+import VueScrollactive from 'vue-scrollactive';
 
 Vue.use(VueMasonryPlugin)
+Vue.use(VueScrollactive)
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);
