@@ -41,9 +41,13 @@
                   <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
               </div>
 
-              <div class="go-top">
-              <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up" aria-hidden="true"></i></a>
-              </div>
+              <back-to-top bottom="0px" right="0px">
+                <scrollactive class="go-top" :duration="2000">
+                    <a title="Back to Top" href="#top" class="scroll-link scrollactive-item">
+                        <i class="im im-arrow-up" aria-hidden="true"></i>
+                    </a>
+                </scrollactive>
+              </back-to-top>
           </div>
 
       </div> <!-- end footer-bottom -->

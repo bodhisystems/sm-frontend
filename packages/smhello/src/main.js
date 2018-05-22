@@ -20,12 +20,12 @@ import "./i18n";
 import {VueMasonryPlugin} from 'vue-masonry';
 import VueScrollactive from 'vue-scrollactive';
 import VueAnimateNumber from 'vue-animate-number';
-import VueObserveVisibility from 'vue-observe-visibility';
+import BackToTop from 'vue-backtotop'
 
 Vue.use(VueMasonryPlugin)
 Vue.use(VueScrollactive)
 Vue.use(VueAnimateNumber)
-Vue.use(VueObserveVisibility)
+Vue.use(BackToTop)
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);
