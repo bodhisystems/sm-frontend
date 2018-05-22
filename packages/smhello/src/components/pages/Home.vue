@@ -24,11 +24,12 @@
                    </a>
                </div>
 
-               <div class="home-content__scroll">
-                   <a href="#about" class="scroll-link smoothscroll">
+               <scrollactive class="home-content__scroll" :duration="2000">
+                   <a href="#about" class="scroll-link scrollactive-item">
                        <span>Scroll Down</span>
                    </a>
-               </div>
+
+               </scrollactive>
 
            </div>
 
