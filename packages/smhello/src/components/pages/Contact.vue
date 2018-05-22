@@ -30,7 +30,7 @@
                       <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                   </div>
                   <div class="form-field">
-                      <button class="full-width btn--primary">Submit</button>
+                      <button class="full-width btn--primary" @click="submit" :disabled="isSubmitted">Submit</button>
                       <div class="submit-loader">
                           <div class="text-loader">Sending...</div>
                           <div class="s-loader">
@@ -77,5 +77,24 @@
 
       </div>
 
-  </section> 
+  </section>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        name:  " Samuel James",
+        email: "example@mail.com",
+        message: "Hello there",
+        isSubmitted:false //we initially set to false to enable submit button
+      }
+    },
+    methods: {
+      submit: function () {
+            //Now submit feed back via ajax
+            this.isSubmitted=true; //set submitted to true to disable submit button
+      },
+    }
+  }
+</script>
