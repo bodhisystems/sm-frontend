@@ -10,9 +10,9 @@
         </div>
     </div>
 
-    <div v-masonry transition-duration="0.3s" item-selector=".item">
-        <div v-masonry-tile class="item" v-for="(item, index) in works" :key="index">
-          <div class="masonry__brick">
+    <div v-masonry transition-duration="0.3s" item-selector=".masonry__brick" class="row masonry-wrap">
+        <div class="masonry">
+          <div v-masonry-tile class="masonry__brick" v-for="(item, index) in works" :key="index">
               <div class="item-folio">
 
                   <div class="item-folio__thumb">

@@ -3,14 +3,14 @@
     <a class="header-menu-toggle" :class="{ 'is-clicked': open }" href="#0" @click="open = !open"><span>Menu</span></a>
 
       <nav class="header-nav-wrap" :class="{ 'mobile': isMobile, 'slideDown' : open, 'slideUp' : !open }">
-        <transition name="fade" mode="out-in">
-          <ul class="header-nav">
-              <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
-              <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-              <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
-              <li><a class="smoothscroll"  href="#blog" title="blog">Blog</a></li>
-              <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
-          </ul>
+          <transition name="fade" mode="out-in">
+            <scrollactive active-class="current" class="header-nav">
+                <a class="scrollactive-item current"  href="#home" title="home"><span>Home</span></a>
+                <a class="scrollactive-item"  href="#about" title="about"><span>About</span></a>
+                <a class="scrollactive-item"  href="#works" title="works"><span>Works</span></a>
+                <a class="scrollactive-item"  href="#blog" title="blog"><span>Blog</span></a>
+                <a class="scrollactive-item"  href="#contact" title="contact"><span>Contact</span></a>
+            </scrollactive>
           </transition>
       </nav>
 
@@ -55,10 +55,63 @@
 
 
 <style lang="scss">
+  @mixin animation($name, $duration, $animation) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $animation;
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-timing-function: $animation;
+  }
+  .header-nav {
+    a {
+      display: inline-block;
+      padding-left: 0;
+      margin-right: 2rem;
+
+      span {
+        display: block;
+        line-height: 72px;
+        color: #FFFFFF;
+      }
+
+      &.current span {
+        font-family: "montserrat-extrabold", sans-serif;
+        color: #af2b2b;
+      }
+    }
+
+    &-wrap.mobile {
+      &.slideUp {
+
+      }
+      &.slideDown {
+        display: block!important;
+        @include animation(slideDown, 1s, ease);
+      	visibility: visible !important;
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+        &-wrap .header-nav a {
+            display: block;
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px dotted rgba(255, 255, 255, 0.07);
+
+            span {
+                padding: 18px 0;
+                line-height: 18px;
+            }
+        }
+    }
+  }
+
 
   .header-menu-toggle {
     z-index: 200;
   }
+
   .fade {
     &-enter, &-leave-to {
       opacity: 0;
@@ -67,24 +120,6 @@
       &-active {
         transition: opacity .5s;
       }
-    }
-  }
-  .header-nav-wrap.mobile {
-    &.slideUp {
-
-    }
-    &.slideDown {
-      display: block!important;
-      animation-name: slideDown;
-    	-webkit-animation-name: slideDown;
-
-    	animation-duration: 1s;
-    	-webkit-animation-duration: 1s;
-
-    	animation-timing-function: ease;
-    	-webkit-animation-timing-function: ease;
-
-    	visibility: visible !important;
     }
   }
 

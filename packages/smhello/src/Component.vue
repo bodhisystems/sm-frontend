@@ -51,8 +51,11 @@ export default {
       loading: true,
       color: "#ff0000",
       size: "45px",
-      loaderClass: 'ss-preload'
+      loaderClass: 'ss-preload',
     }
+  },
+  methods: {
+
   },
   mounted() {
     setTimeout(()=>{
