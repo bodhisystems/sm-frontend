@@ -1,43 +1,50 @@
 <template>
-  <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="../../../static/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-       <Overlay />
+<div>
+  <walker />
+    <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
-       <div class="home-content">
 
-           <div class="row home-content__main">
+         <Overlay />
 
-               <h3>Hello There</h3>
+         <div class="home-content">
 
-               <h1>
-                   I am Jonathan Doe. <br>
-                   I am a graphic & UI/UX <br>
-                   designer based in Somewhere.
-               </h1>
+             <div class="row home-content__main">
 
-               <div class="home-content__buttons">
-                   <a href="#works" class="smoothscroll btn btn--stroke">
-                       Latest Projects
-                   </a>
-                   <a href="#about" class="smoothscroll btn btn--stroke">
-                       More About Me
-                   </a>
-               </div>
+                 <h3>Hello There</h3>
 
-               <scrollactive class="home-content__scroll" :duration="2000">
-                   <a href="#about" class="scroll-link scrollactive-item">
-                       <span>Scroll Down</span>
-                   </a>
+                 <h1>
+                     I am Jonathan Doe. <br>
+                     I am a graphic & UI/UX <br>
+                     designer based in Somewhere.
+                 </h1>
 
-               </scrollactive>
+                 <div class="home-content__buttons">
+                     <a href="#works" class="smoothscroll btn btn--stroke">
+                         Latest Projects
+                     </a>
+                     <a href="#about" class="smoothscroll btn btn--stroke">
+                         More About Me
+                     </a>
+                 </div>
 
-           </div>
+                 <scrollactive class="home-content__scroll" :duration="2000">
+                     <a href="#about" class="scroll-link scrollactive-item">
+                         <span>Scroll Down</span>
+                     </a>
 
-       </div>
+                 </scrollactive>
 
-       <Social />
+             </div>
 
-   </section>
+         </div>
+
+         <Social />
+
+
+     </section>
+</div>
+
 </template>
 
 
@@ -45,11 +52,35 @@
 
 import Social from '../lib/Social'
 import Overlay from '../lib/Overlay'
+import Walker from '../lib/Walker'
 
 export default {
   components: {
     Social,
-    Overlay
+    Overlay,
+    Walker
   },
 }
 </script>
+
+<style lang="scss">
+  .scrollmagic-pin-spacer {
+    padding: 0!important;
+    //z-index: 9999!important;
+    width: 100%!important;
+    height: 300px!important;
+    z-index: 100;
+  }
+
+  #pinned_wrapper, #sky, #city, #skyline-wrapper, #skyline  {
+    height: 300px!important;
+  }
+
+  #pinned_wrapper #walker {
+    top: 41%!important;
+  }
+
+  .s-home {
+    z-index: 101;
+  }
+</style>

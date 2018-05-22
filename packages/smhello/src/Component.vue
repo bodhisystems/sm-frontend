@@ -1,10 +1,13 @@
 <template>
   <div :class="loaderClass">
+
     <section class="layout">
       <Header />
       <Home />
+
       <About />
       <Works />
+
       <Testimonials />
       <Blog />
       <Cta />
@@ -21,7 +24,9 @@
           </transition>
         </div>
       </transition>
+
     </section>
+
   </div>
 </template>
 
@@ -41,6 +46,7 @@ import Blog from './components/pages/Blog'
 import Contact from './components/pages/Contact'
 import Home from './components/pages/Home'
 import Works from './components/pages/Works'
+//import Walker from './components/lib/Walker'
 
 //import { addClass, removeClass } from './util/helpers'
 
@@ -78,6 +84,7 @@ export default {
     Contact,
     Home,
     Works,
+    //Walker
   }
 }
 </script>

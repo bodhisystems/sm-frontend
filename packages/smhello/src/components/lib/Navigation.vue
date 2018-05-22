@@ -4,7 +4,7 @@
 
       <nav class="header-nav-wrap" :class="{ 'mobile': isMobile, 'slideDown' : open, 'slideUp' : !open }">
           <transition name="fade" mode="out-in">
-            <scrollactive active-class="current" class="header-nav" :duration="1500">
+            <scrollactive active-class="current" :offset="300" class="header-nav" :duration="1500">
                 <a class="scrollactive-item current"  href="#home" title="home"><span>Home</span></a>
                 <a class="scrollactive-item"  href="#about" title="about"><span>About</span></a>
                 <a class="scrollactive-item"  href="#works" title="works"><span>Works</span></a>
