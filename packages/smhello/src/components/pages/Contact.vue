@@ -8,7 +8,7 @@
               <h3>Contact</h3>
               <h1>Say Hello.</h1>
 
-              <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+              <!-- <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p> -->
           </div>
       </div>
 
@@ -57,21 +57,21 @@
           </div>
           <div class="col-four tab-full contact__infos">
               <h4 class="h06">Phone</h4>
-              <p>Phone: (+63) 555 1212<br>
-              Mobile: (+63) 555 0100<br>
-              Fax: (+63) 555 0101
+              <p>Phone: (321) 948 6213<br>
+              <!-- Mobile: (+63) 555 0100<br> -->
+              <!-- Fax: (+63) 555 0101 -->
               </p>
 
               <h4 class="h06">Email</h4>
-              <p>someone@holawebsite.com<br>
-              info@holawebsite.com
+              <p>hudeomah@gmail.com<br>
+              hello@subashmaharjan.com
               </p>
 
               <h4 class="h06">Address</h4>
               <p>
-              1600 Amphitheatre Parkway<br>
-              Mountain View, CA<br>
-              94043 US
+              2405 Peyton Drive #209<br>
+              Charlottesville, VA<br>
+              22901 US
               </p>
           </div>
 
