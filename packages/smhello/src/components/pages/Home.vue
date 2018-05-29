@@ -11,26 +11,23 @@
 
              <div class="row home-content__main">
 
-                 <h3>Hello There</h3>
 
-                 <h1>
-                     I am Jonathan Doe. <br>
-                     I am a graphic & UI/UX <br>
-                     designer based in Somewhere.
-                 </h1>
+                 <h3>{{ $t('content.home.hero.greeting', {'welcomeText': 'hello there & namaste'}) }}</h3>
+
+                 <h1>{{ $t('content.home.hero.quote') }}</h1>
 
                  <div class="home-content__buttons">
                      <a href="#works" class="smoothscroll btn btn--stroke">
-                         Latest Projects
+                         {{ $t('content.home.hero.cta-latest-projects') }}
                      </a>
                      <a href="#about" class="smoothscroll btn btn--stroke">
-                         More About Me
+                         {{ $t('content.home.hero.cta-more-about-me') }}
                      </a>
                  </div>
 
                  <scrollactive class="home-content__scroll" :duration="2000">
                      <a href="#about" class="scroll-link scrollactive-item">
-                         <span>Scroll Down</span>
+                         <span>{{ $t('content.home.hero.link-scroll-down') }}</span>
                      </a>
 
                  </scrollactive>

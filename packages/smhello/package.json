@@ -11,7 +11,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "deploy": "node node_modules/s3-deploy/.bin/s3-deploy './dist/**' --cwd './dist/' --region us-east-1 --bucket smhello --profile subashm"
   },
   "dependencies": {
     "@vue/web-component-wrapper": "^1.2.0",
@@ -86,6 +87,7 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
+    "s3-deploy": "^1.0.0",
     "selenium-server": "^3.0.1",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",

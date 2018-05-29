@@ -2277,6 +2277,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin-top: 0;
 }
 
+.timeline__header h6 {
+    margin-top: 0;
+}
+
 .timeline__desc p {
     margin: 0;
     padding-bottom: 3rem;
@@ -3411,7 +3415,7 @@ footer a:hover, footer a:focus {
     bottom: 0;
     right: 0;
     z-index: 600;
-    
+
 }
 
 .go-top a, .go-top a:visited {

@@ -3,54 +3,53 @@
 
       <div class="row narrow section-intro has-bottom-sep">
           <div class="col-full text-center">
-              <h3>About</h3>
-              <h1>More About Me</h1>
-              <p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>
+              <h3>{{ $t('content.about.title') }}</h3>
+              <h1>{{ $t('content.about.sub-title') }}</h1>
+              <p class="lead">{{ $t('content.about.lead') }}</p>
           </div>
       </div>
 
       <div class="row about-content">
 
-          <div class="col-six tab-full left">
-              <h3>Howdy!</h3>
+          <div class="col-full tab-full left">
 
-              <p>Lorem ipsum Ut eiusmod ex magna sit dolor esse adipisicing minim ad cupidatat eu veniam nostrud mollit laboris sunt magna velit culpa consectetur nostrud consectetur labore sed do.</p>
+              <h3>{{ $t('content.about.tab-full.title') }}</h3>
+              <img src="../../../static/images/hero-bg.jpg" />
+              <p>{{ $t('content.about.tab-full.para-1') }}</p>
+              <p>{{ $t('content.about.tab-full.para-2') }}</p>
 
-              <p>
-              Lorem ipsum Nisi officia Duis irure voluptate dolor commodo pariatur occaecat aliquip adipisicing voluptate Ut in qui ea sint occaecat in commodo in in in incididunt ut sunt in Ut Duis in ut ex qui anim cupidatat cupidatat ex in non dolore labore ea amet cillum ea qui dolor nisi sed velit mollit exercitation ex fugiat labore in deserunt culpa laborum culpa anim dolore laboris amet irure mollit proident velit fugiat aute ea elit magna consequat qui officia quis elit Duis dolor esse cupidatat tempor proident voluptate aliqua ex cupidatat do eiusmod veniam irure laborum ut magna nostrud dolore ullamco commodo elit sit magna aliqua laborum veniam officia dolor.
-              </p>
           </div>
 
-          <div class="col-six tab-full right">
+          <!-- <div class="col-six tab-full right">
+
+          </div> -->
+
+          <!-- <div class="col-six tab-full right">
               <h3>I've Got Some skills.</h3>
 
               <ul class="skill-bars">
                   <li>
                   <div class="progress percent90"><span>90%</span></div>
-                  <strong>HTML5</strong>
+                  <strong>HTML</strong>
                   </li>
                   <li>
                   <div class="progress percent85"><span>85%</span></div>
-                  <strong>CSS3</strong>
+                  <strong>CSS</strong>
                   </li>
                   <li>
                   <div class="progress percent70"><span>70%</span></div>
-                  <strong>JQuery</strong>
+                  <strong>Javascript</strong>
                   </li>
                   <li>
-                  <div class="progress percent95"><span>95%</span></div>
-                  <strong>PHP</strong>
+                  <div class="progress percent95"><span>50%</span></div>
+                  <strong>PHP, JAVA, .NET</strong>
                   </li>
                   <li>
-                  <div class="progress percent75"><span>75%</span></div>
-                  <strong>Wordpress</strong>
-                  </li>
-                  <li>
-                  <div class="progress percent90"><span>90%</span></div>
-                  <strong>Angular JS</strong>
+                  <div class="progress percent75"><span>60%</span></div>
+                  <strong>Wordpress, Drupal, OrchardCMS, Liferay</strong>
                   </li>
               </ul>
-          </div>
+          </div> -->
 
       </div> <!-- end about-content -->
 
@@ -71,67 +70,92 @@
               <h3>My Work Experience.</h3>
           </div>
 
-          <div class="col-six tab-full left">
-              <div class="timeline">
-
-                  <div class="timeline__block">
-                      <div class="timeline__bullet"></div>
-                      <div class="timeline__header">
-                          <p class="timeline__timeframe">July 2015 - Present</p>
-                          <h3>Awesome Studio</h3>
-                          <h5>Lead Designer</h5>
-                      </div>
-                      <div class="timeline__desc">
-                          <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                      </div>
-                  </div> <!-- end timeline__block -->
-
-                  <div class="timeline__block">
-                      <div class="timeline__bullet"></div>
-                      <div class="timeline__header">
-                          <p class="timeline__timeframe">July 2014 - June 2015</p>
-                          <h3>Super Cool Agency</h3>
-                          <h5>Front-end Developer</h5>
-                      </div>
-                      <div class="timeline__desc">
-                          <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-                      </div>
-                  </div> <!-- end timeline__block -->
-
-              </div> <!-- end timeline -->
-          </div> <!-- end left -->
-
-          <div class="col-six tab-full right">
-              <div class="timeline">
-
-                  <div class="timeline__block">
-                      <div class="timeline__bullet"></div>
-                      <div class="timeline__header">
-                          <p class="timeline__timeframe">July 2012 - June 2014</p>
-                          <h3>Great Design Studio</h3>
-                          <h5>Web Designer</h5>
-                      </div>
-                      <div class="timeline__desc">
-                          <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi.</p>
-                      </div>
-                  </div> <!-- end timeline__block -->
-
-                  <div class="timeline__block">
-                      <div class="timeline__bullet"></div>
-                      <div class="timeline__header">
-                          <p class="timeline__timeframe">July 2011 - June 2012</p>
-                          <h3>Epic Design Agency</h3>
-                          <h5>Web Designer</h5>
-                      </div>
-                      <div class="timeline__desc">
-                          <p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est occaecat nisi incididunt.</p>
-                      </div>
-                  </div> <!-- end timeline__block -->
-
-              </div> <!-- end timeline -->
-          </div> <!-- end right -->
-
+          <div v-for="(column, index) in experiencColumn" :key="index" class="col-six tab-full" :class="index == 0 ? 'left': 'right'">
+            <div v-for="data in column" class="timeline" :key="data.agency">
+              <div class="timeline__block">
+                  <div class="timeline__bullet"></div>
+                  <div class="timeline__header">
+                      <p class="timeline__timeframe">{{ data.timeframe.start }} - {{ data.timeframe.end }}</p>
+                      <h3>{{ data.agency }}</h3>
+                      <h5>{{ data.location }}</h5>
+                      <h6>{{ data.position }}</h6>
+                  </div>
+                  <div class="timeline__desc">
+                      <p>{{ data.description }}</p>
+                  </div>
+              </div>
+            </div>
+          </div>
       </div> <!-- end about-content timeline -->
 
   </section>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        experiencColumn: [[],[]],
+        experience: [
+          {
+            timeframe: {
+              start: "March 2018",
+              end: "Present"
+            },
+            agency: "Updater",
+            position: "Senior Frontend Engineer",
+            location: "Charlottesville, Virginia",
+            description: "Updater is a technology company that builds powerful tools to help people move. Updater's digital tools help people find and reserve trustworthy moving companies, connect home services, forward their mail, transfer utilities, update accounts, and much more – all in one easy-to-use platform."
+          },
+          {
+            timeframe: {
+              start: "December 2015",
+              end: "March 2018"
+            },
+            agency: "Digital Management",
+            location: "Charlottesville, Virginia",
+            position: "Senior Frontend Developer - Javascript",
+            description: "DMI is a global, end-to-end mobility company that offers a variety of solutions including Mobility Strategy, Brand Marketing, UX, Web & App Development, Omnichannel Commerce, Big Data Insights, Managed Mobility Services, Cybersecurity Solutions and Infrastructure Services."
+          },
+          {
+            timeframe: {
+              start: "April 2011",
+              end: "November 2015"
+            },
+            agency: "Silverchair",
+            position: "Senior UI Developer",
+            location: "Charlottesville, Virginia",
+            description: "Silverchair designs and develops semantic technologies, publishing platforms, and e-learning solutions to scientific, technical and medical publishers, academic medical centers, professional societies, and the federal government in the United States."
+          },
+          {
+            timeframe: {
+              start: "April 2009",
+              end: "April 2011"
+            },
+            agency: "Enviroapps",
+            position: "UI Developer",
+            location: "Orlando, Florida",
+            description: "EnviroApps bring solutions to modern challenges using environment friendly technologies empowered by human imagination and care for the future generation. Their process of engineering development and deployment follow the GISTS (Green Infra Structure Technology Solutions) architecture to be eco-efficient and help transforming our engineers’ imaginative ideas in to products and solutions."
+          },
+        ]
+      }
+    },
+    methods: {
+      divideColumn(type){
+        var result = [[], []], halfLen = this.experience.length/2, pos = 0;
+        this.experience.forEach(function(val, i) {
+          if(type === 'odd-even') pos = i & 1;
+          else {
+            if(halfLen <= i) pos = 1;
+          }
+
+          result[pos].push(val);
+        })
+        return result;
+      },
+    },
+    created() {
+      this.experiencColumn = this.divideColumn()
+    }
+  }
+</script>
