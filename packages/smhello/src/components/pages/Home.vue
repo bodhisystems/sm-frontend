@@ -1,66 +1,82 @@
 <template>
-
-<div>
-  <walker />
+  <section class="layout">
+    <HomeHeader />
+    <walker />
     <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+       <Overlay />
+       <HomeContent />
+       <Social />
+    </section>
 
+    <About />
+    <Works />
 
-         <Overlay />
+    <Testimonials />
+    <BlogContent />
+    <Cta />
+    <Stats />
 
-         <div class="home-content">
+    <Contact />
+    <Footer />
+    <PhotoSwipe />
 
-             <div class="row home-content__main">
-
-
-                 <h3>{{ $t('content.home.hero.greeting', {'welcomeText': 'hello there & namaste'}) }}</h3>
-
-                 <h1>{{ $t('content.home.hero.quote') }}</h1>
-
-                 <div class="home-content__buttons">
-                     <a href="#works" class="smoothscroll btn btn--stroke">
-                         {{ $t('content.home.hero.cta-latest-projects') }}
-                     </a>
-                     <a href="#about" class="smoothscroll btn btn--stroke">
-                         {{ $t('content.home.hero.cta-more-about-me') }}
-                     </a>
-                 </div>
-
-                 <scrollactive class="home-content__scroll" :duration="2000">
-                     <a href="#about" class="scroll-link scrollactive-item">
-                         <span>{{ $t('content.home.hero.link-scroll-down') }}</span>
-                     </a>
-
-                 </scrollactive>
-
-             </div>
-
-         </div>
-
-         <Social />
-
-
-     </section>
-</div>
-
+  </section>
 </template>
 
 
 <script>
+// Shared Components
+import Social from '@/components/lib/Social'
+import Overlay from '@/components/lib/Overlay'
+import Walker from '@/components/lib/Walker'
+import Cta from '@/components/shared/Cta'
+import Footer from '@/components/shared/Footer'
 
-import Social from '../lib/Social'
-import Overlay from '../lib/Overlay'
-import Walker from '../lib/Walker'
+import PhotoSwipe from '@/components/shared/PhotoSwipe'
+import Stats from '@/components/shared/Stats'
+import Testimonials from '@/components/shared/Testimonials'
+
+// Pages
+import About from '@/components/pages/About'
+import Contact from '@/components/pages/Contact'
+import Works from '@/components/pages/Works'
+
+import HomeHeader from '@/components/pages/home/HomeHeader'
+import HomeContent from '@/components/pages/home/HomeContent'
+
+import BlogContent from '@/components/pages/blog/BlogContent'
 
 export default {
   components: {
+    Cta,
+    Footer,
+    HomeHeader,
+    PhotoSwipe,
+    Stats,
+    Testimonials,
+    HomeContent,
+    About,
+    BlogContent,
+    Contact,
+    Works,
     Social,
     Overlay,
     Walker
-  },
+  }
 }
 </script>
 
 <style lang="scss">
+  .fade {
+    &-enter, &-leave-to {
+      opacity: 0;
+    }
+    &-enter, &-leave {
+      &-active {
+        transition: opacity .5s;
+      }
+    }
+  }
   .scrollmagic-pin-spacer {
     padding: 0!important;
     //z-index: 9999!important;

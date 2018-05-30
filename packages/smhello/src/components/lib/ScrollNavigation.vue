@@ -3,16 +3,16 @@
     <a class="header-menu-toggle" :class="{ 'is-clicked': open }" href="#0" @click="open = !open"><span>Menu</span></a>
 
       <nav class="header-nav-wrap" :class="{ 'mobile': isMobile, 'slideDown' : open, 'slideUp' : !open }">
-          <ul class="header-nav">
-              <li class="current"><router-link to="/">Home</router-link></li>
-              <li><router-link to="/about">About</router-link></li>
-              <li><router-link to="/works">Works</router-link></li>
-              <li><router-link to="/blog">Blog</router-link></li>
-              <li><router-link to="/contact">Contact</router-link></li>
-          </ul>
+          <transition name="fade" mode="out-in">
+            <scrollactive active-class="current" :offset="300" class="header-nav" :duration="1500">
+                <a class="scrollactive-item current"  href="#home" title="home"><span>Home</span></a>
+                <a class="scrollactive-item"  href="#about" title="about"><span>About</span></a>
+                <a class="scrollactive-item"  href="#works" title="works"><span>Works</span></a>
+                <a class="scrollactive-item"  href="#blog" title="blog"><span>Blog</span></a>
+                <a class="scrollactive-item"  href="#contact" title="contact"><span>Contact</span></a>
+            </scrollactive>
+          </transition>
       </nav>
-
-      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
 
   </div>
 </template>
