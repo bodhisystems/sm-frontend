@@ -29,8 +29,6 @@
           ease: Circ.easeOut,
         });
       },
-
-
       pinContainer() {
         new ScrollMagic.Scene({
           triggerHook: 0,
@@ -39,7 +37,6 @@
         .setPin('#pinned_wrapper', {pushFollowers: true})
         .addTo(this.controller);
       },
-
       walkIn() {
         var moveBackground = TweenMax.to('#walker', 1.0, {
           backgroundPositionX: '100%',
@@ -112,15 +109,25 @@
       },
     },
     mounted() {
-      this.fadeIn();
-      this.pinContainer();
-      this.walkIn();
-      this.backgroundWalkcycle();
+      //console.log(document.documentElement.clientWidth);
+      if(document.documentElement.clientWidth > 1100) {
+        this.fadeIn();
+        this.pinContainer();
+        this.walkIn();
+        this.backgroundWalkcycle();
+      }
     },
   }
 </script>
 
 <style lang="scss">
+
+$scrollmagicHeight: auto; //400px
+$cityBackground: url('http://zauberwald.ultrabold.de/static/img/background.acb1581.png');
+$skyBackground: linear-gradient(to bottom, rgb(155, 180, 223) 0%, rgb(221, 240, 252) 25%);
+$skylineBackground: url('http://zauberwald.ultrabold.de/static/img/skyline.a23b304.png');
+$walkerBackground: url('http://zauberwald.ultrabold.de/static/img/walker.305185c.png') no-repeat 0% 0%;
+
 #headline {
   opacity: 0;
   transform: translateY(50px);
@@ -130,19 +137,27 @@
   padding: 0.75rem;
 }
 
+.scrollmagic-pin-spacer {
+  padding: 0!important;
+  width: 100%!important;
+  height: auto!important;
+  z-index: 103;
+  margin-top: 72px!important;
+}
+
 #pinned_wrapper {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: $scrollmagicHeight;
 
   #city {
     position: relative;
     width: 100%;
-    height: 400px;
-    background-image: url('http://zauberwald.ultrabold.de/static/img/background.acb1581.png');
-    background-repeat: repeat-x;
-    background-size: cover;
-    background-position-y: 23px;
+    height: $scrollmagicHeight;
+    //background-image: $cityBackground;
+    //background-repeat: repeat-x;
+    //background-size: cover;
+    //background-position-y: 23px;
     z-index: 10;
   }
 
@@ -151,10 +166,10 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 400px;
-    background: linear-gradient(to bottom, rgb(155, 180, 223) 0%, rgb(221, 240, 252) 25%);
-    background-repeat: no-repeat;
-    background-position-y: -11px;
+    height: $scrollmagicHeight;
+    //background: $skyBackground;
+    //background-repeat: no-repeat;
+    //background-position-y: -11px;
     z-index: 1;
   }
 
@@ -163,30 +178,31 @@
     top: -20%;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: $scrollmagicHeight;
     z-index: 5;
 
     #skyline{
       position: relative;
       width: 100%;
-      height: 400px;
-      background: url('http://zauberwald.ultrabold.de/static/img/skyline.a23b304.png');
-      background-repeat: repeat-x;
-      background-size: contain;
-      background-position-y: 44px;
-      background-position-x: 0;
+      height: $scrollmagicHeight;
+      //background: $skylineBackground;
+      //background-repeat: repeat-x;
+      //background-size: contain;
+      //background-position-y: 44px;
+      //background-position-x: 0;
     }
   }
 
   #walker {
-    background: url('http://zauberwald.ultrabold.de/static/img/walker.305185c.png') no-repeat 0% 0%;
+    background: $walkerBackground;
     position: absolute;
     height: 190px;
     width: 250px;
-    left: 0;
-    top: 47%;
+    left: -160px;
+    top: 41%;
     transform: translateX(-200px);
     z-index: 15;
+    margin-top: 20px;
   }
 }
 </style>
