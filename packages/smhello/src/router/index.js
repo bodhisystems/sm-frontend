@@ -12,7 +12,6 @@ import Styles from '@/components/pages/Styles'
 
 Vue.use(Router)
 
-
 export default (base, mode) =>
   new Router({
     base,
@@ -59,4 +58,4 @@ export default (base, mode) =>
         component: Styles
       }
     ]
-  });
+});
