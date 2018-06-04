@@ -37,8 +37,20 @@ export default {
   }
   .s-header.is-primary {
     background: transparent;
+    .header-nav {
+      li a {
+        color: #999;
+        &.router-link-active {
+          color: #af2b2b;
+        }
+      }
+    }
   }
   .s-header.is-light {
     background: #111;
+  }
+  .header-nav-wrap {
+    top: 0;
+    font-size: 12px;
   }
 </style>

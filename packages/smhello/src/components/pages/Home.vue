@@ -8,15 +8,25 @@
        <Social />
     </section>
 
-    <About />
-    <Works />
+    <AboutContent />
+    <WorkContent />
 
     <Testimonials />
-    <BlogContent />
-    <Cta />
-    <Stats />
+    <section id="blog" class="s-blog target-section">
 
-    <Contact />
+        <div class="row narrow section-intro has-bottom-sep">
+            <div class="col-full">
+                <h3><router-link to="/blog">{{ $t('content.blog.title') }}</router-link></h3>
+                <h1>{{ $t('content.blog.sub-title') }}</h1>
+            </div>
+        </div>
+
+        <BlogContent />
+    </section>
+    <Cta />
+    <!-- <Stats />
+
+    <Contact /> -->
     <Footer />
     <PhotoSwipe />
 
@@ -33,18 +43,16 @@ import Cta from '@/components/shared/Cta'
 import Footer from '@/components/shared/Footer'
 
 import PhotoSwipe from '@/components/shared/PhotoSwipe'
-import Stats from '@/components/shared/Stats'
+// import Stats from '@/components/shared/Stats'
 import Testimonials from '@/components/shared/Testimonials'
 
 // Pages
-import About from '@/components/pages/About'
-import Contact from '@/components/pages/Contact'
-import Works from '@/components/pages/Works'
-
 import HomeHeader from '@/components/pages/home/HomeHeader'
 import HomeContent from '@/components/pages/home/HomeContent'
-
-import BlogContent from '@/components/pages/blog/BlogContent'
+import AboutContent from '@/components/pages/home/AboutContent'
+import BlogContent from '@/components/pages/home/BlogContent'
+import WorkContent from '@/components/pages/home/WorkContent'
+// import Contact from '@/components/pages/home/ContactForm'
 
 export default {
   components: {
@@ -52,16 +60,25 @@ export default {
     Footer,
     HomeHeader,
     PhotoSwipe,
-    Stats,
+    // Stats,
     Testimonials,
     HomeContent,
-    About,
+    AboutContent,
     BlogContent,
-    Contact,
-    Works,
+    // Contact,
+    WorkContent,
     Social,
     Overlay,
     Walker
+  },
+  filters: {
+    titleCase: function(value) {
+        if (!value) return ''
+        //ref: https://gist.github.com/kkiernan/91298079d34f0f832054
+        return value.split('_').map(function(item) {
+            return item.charAt(0).toUpperCase() + item.substring(1);
+        }).join(' ');
+    },
   }
 }
 </script>
@@ -77,23 +94,11 @@ export default {
       }
     }
   }
-  .scrollmagic-pin-spacer {
-    padding: 0!important;
-    //z-index: 9999!important;
-    width: 100%!important;
-    height: 300px!important;
-    z-index: 100;
-  }
-
-  #pinned_wrapper, #sky, #city, #skyline-wrapper, #skyline  {
-    height: 300px!important;
-  }
-
-  #pinned_wrapper #walker {
-    top: 41%!important;
-  }
-
   .s-home {
     z-index: 101;
+    .overlay {
+      opacity: 0.85;
+    }
   }
+
 </style>

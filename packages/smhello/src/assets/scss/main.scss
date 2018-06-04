@@ -1661,7 +1661,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     color: #FFFFFF;
 }
 
-.header-nav li.current a {
+.header-nav li a.router-link-active {
     font-family: "montserrat-extrabold", sans-serif;
     color: #af2b2b;
 }
@@ -1728,10 +1728,15 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .s-home {
     width: 100%;
     height: 100%;
-    min-height: 786px;
+    min-height: 777px;
     background-color: transparent;
     position: relative;
     display: table;
+    background: url($imagePath + "/images/hero-bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .s-home .shadow-overlay {
