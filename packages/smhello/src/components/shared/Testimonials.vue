@@ -62,26 +62,26 @@
             },
             testimonials: [
               {
-                imageSrc: '/static/images/avatars/user-01.jpg',
+                imageSrc: 'https://media.licdn.com/dms/image/C5603AQH_x45isp5jsg/profile-displayphoto-shrink_100_100/0?e=1533168000&v=beta&t=8DWggXsepFlEQOS7Yjh7VqWcrlBB9D6_vhK1fYcD0pk',
                 altText: 'Author image',
-                description: 'Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium quos qui praesentium corpori.',
-                author: 'Tim Cook',
-                position: 'CEO, Apple'
+                description: 'When I started at Silverchair, I had only a little experience with XSLT. Subash took the time to explain the data process flows, gave me tools that he had developed and basically "taught me to fish". He enabled me to be successful on many tasks much sooner than I would have been otherwise.',
+                author: 'Elizabeth Schley',
+                position: 'Web Developer, Teachstone'
               },
               {
-                imageSrc: '/static/images/avatars/user-05.jpg',
+                imageSrc: 'https://media.licdn.com/dms/image/C5603AQFlY41vUDYaAA/profile-displayphoto-shrink_100_100/0?e=1533168000&v=beta&t=5SBAVyYj0dwQm1oxs6AKGjXjSNF1pBkjbXqJK-GyuRk',
                 altText: 'Author image',
-                description: 'Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci. Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.',
-                author: 'Sundar Pichai',
-                position: 'CEO, Google'
+                description: 'Subash is Hardworking, Energetic and Enthusiastic Person. Subash always goes beyond the requirements to fulfill the work. Subash puts in extra effort to complete successful projects. He has willingness to learn new technologies and implement them within short period of time. I strongly recommend Subash and wish him all the success. He will be in my team anytime.',
+                author: 'Makesh Karuppiah',
+                position: 'Enviromental Scientist & Senior Information Technologist, Enviroapps'
               },
-              {
-                imageSrc: '/static/images/avatars/user-02.jpg',
-                altText: 'Author image',
-                description: 'Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam. Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.',
-                author: 'Satya Nadella',
-                position: 'CEO, Microsoft'
-              }
+              // {
+              //   imageSrc: '/static/images/avatars/user-02.jpg',
+              //   altText: 'Author image',
+              //   description: 'Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam. Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.',
+              //   author: 'Satya Nadella',
+              //   position: 'CEO, Microsoft'
+              // }
             ]
         };
     },

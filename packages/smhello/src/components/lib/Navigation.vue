@@ -3,16 +3,16 @@
     <a class="header-menu-toggle" :class="{ 'is-clicked': open }" href="#0" @click="open = !open"><span>Menu</span></a>
 
       <nav class="header-nav-wrap" :class="{ 'mobile': isMobile, 'slideDown' : open, 'slideUp' : !open }">
-          <transition name="fade" mode="out-in">
-            <scrollactive active-class="current" class="header-nav" :duration="1500">
-                <a class="scrollactive-item current"  href="#home" title="home"><span>Home</span></a>
-                <a class="scrollactive-item"  href="#about" title="about"><span>About</span></a>
-                <a class="scrollactive-item"  href="#works" title="works"><span>Works</span></a>
-                <a class="scrollactive-item"  href="#blog" title="blog"><span>Blog</span></a>
-                <a class="scrollactive-item"  href="#contact" title="contact"><span>Contact</span></a>
-            </scrollactive>
-          </transition>
+          <ul class="header-nav">
+              <!-- <li ref="homeLink"><router-link to="/">Home</router-link></li> -->
+              <li ref="aboutLink"><router-link to="/about">About</router-link></li>
+              <li ref="worksLink"><router-link to="/works">Works</router-link></li>
+              <li ref="blogLink"><router-link to="/blog">Blog</router-link></li>
+              <!-- <li ref="contactLink"><router-link to="/contact">Contact</router-link></li> -->
+          </ul>
       </nav>
+
+      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
 
   </div>
 </template>
@@ -27,6 +27,7 @@
         isMobile: false,
         windowWidth: 0,
         windowHeight: 0,
+        currentClass: ''
       }
     },
     mounted(){
@@ -36,6 +37,12 @@
         //Init
         this.setIsVisible()
       })
+
+      // console.log(this.$refs.homeLink)
+      // switch(this.$route.name){
+      //   case "blog-post":
+      //     this.currentClass = "current"
+      // }
     },
     methods: {
       setIsVisible() {

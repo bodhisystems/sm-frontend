@@ -4,29 +4,29 @@
           <div class="col-full">
 
               <div class="footer-logo">
-                  <a class="footer-site-logo" href="#0"><img src="../../../static/images/logo.png" alt="Homepage"></a>
+                  <a class="footer-site-logo" href="/"><img src="../../../static/images/logo.png" alt="Homepage"></a>
               </div>
 
               <ul class="footer-social">
-                  <li><a href="#0">
+                  <li><a href="https://www.facebook.com/subash.maharjan.33">
                       <i class="im im-facebook" aria-hidden="true"></i>
                       <span>Facebook</span>
                   </a></li>
-                  <li><a href="#0">
+                  <li><a href="https://twitter.com/submjn">
                       <i class="im im-twitter" aria-hidden="true"></i>
                       <span>Twitter</span>
                   </a></li>
-                  <li><a href="#0">
+                  <li><a href="https://www.instagram.com/hudeomah/">
                       <i class="im im-instagram" aria-hidden="true"></i>
                       <span>Instagram</span>
                   </a></li>
-                  <li><a href="#0">
+                  <li><a href="https://www.behance.net/mr_submjn58b7">
                       <i class="im im-behance" aria-hidden="true"></i>
                       <span>Behance</span>
                   </a></li>
-                  <li><a href="#0">
-                      <i class="im im-pinterest" aria-hidden="true"></i>
-                      <span>Pinterest</span>
+                  <li><a href="https://www.linkedin.com/in/subashmaharjan/">
+                      <i class="im im-linkedin" aria-hidden="true"></i>
+                      <span>LinkedIn</span>
                   </a></li>
               </ul>
 
@@ -37,8 +37,8 @@
 
           <div class="col-twelve">
               <div class="copyright">
-                  <span>© Copyright Hola 2017</span>
-                  <span>Design by <a href="https://www.styleshout.com/">styleshout</a></span>
+                  <span>© Copyright subash {{ new Date().getFullYear() }}</span>
+                  <span>Design by <a href="https://www.subashmaharjan.com/">Subash Maharjan</a></span>
               </div>
 
               <back-to-top bottom="0px" right="0px">

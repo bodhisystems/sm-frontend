@@ -37,6 +37,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
+      "ScrollMagicGSAP": "scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap"
     }
   },
   module: {
@@ -51,6 +52,10 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      {
+        test: /\.js$/,
+        loader: "imports-loader?define=>false"
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
