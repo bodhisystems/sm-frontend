@@ -4,11 +4,11 @@
 
       <nav class="header-nav-wrap" :class="{ 'mobile': isMobile, 'slideDown' : open, 'slideUp' : !open }">
           <ul class="header-nav">
-              <li class="current"><router-link to="/">Home</router-link></li>
-              <li><router-link to="/about">About</router-link></li>
-              <li><router-link to="/works">Works</router-link></li>
-              <li><router-link to="/blog">Blog</router-link></li>
-              <li><router-link to="/contact">Contact</router-link></li>
+              <!-- <li ref="homeLink"><router-link to="/">Home</router-link></li> -->
+              <li ref="aboutLink"><router-link to="/about">About</router-link></li>
+              <li ref="worksLink"><router-link to="/works">Works</router-link></li>
+              <li ref="blogLink"><router-link to="/blog">Blog</router-link></li>
+              <!-- <li ref="contactLink"><router-link to="/contact">Contact</router-link></li> -->
           </ul>
       </nav>
 
@@ -27,6 +27,7 @@
         isMobile: false,
         windowWidth: 0,
         windowHeight: 0,
+        currentClass: ''
       }
     },
     mounted(){
@@ -36,6 +37,12 @@
         //Init
         this.setIsVisible()
       })
+
+      // console.log(this.$refs.homeLink)
+      // switch(this.$route.name){
+      //   case "blog-post":
+      //     this.currentClass = "current"
+      // }
     },
     methods: {
       setIsVisible() {
