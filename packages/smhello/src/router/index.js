@@ -19,6 +19,11 @@ export default (base, mode) =>
     routes: [
       {
         path: '/',
+        name: 'siteHome',
+        component: Home
+      },
+      {
+        path: '/home',
         name: 'home',
         component: Home
       },

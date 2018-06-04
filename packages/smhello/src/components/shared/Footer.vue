@@ -38,7 +38,7 @@
           <div class="col-twelve">
               <div class="copyright">
                   <span>© Copyright subash {{ new Date().getFullYear() }}</span>
-                  <span>Design by <a href="https://www.subashmaharjan.com/">Subash Maharjan</a></span>
+                  <span>Design by <a href="http://www.subashmaharjan.com/">Subash Maharjan</a></span>
               </div>
 
               <back-to-top bottom="0px" right="0px">

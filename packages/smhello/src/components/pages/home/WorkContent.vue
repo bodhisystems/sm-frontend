@@ -74,20 +74,20 @@
             link: ["https://www.rcpch.ac.uk/", "Project Link"],
             caption: "Founded in 1996 and now with over 18,000 members across the world, we play a major role in postgraduate medical education, professional standards, research and policy."
           },
-          {
-            title: 'American Academy of Pediatrics',
-            category: 'Web Development',
-            image: ["aap", "American Academy of Pediatrics", "alt-text"],
-            link: ["https://solutions.aap.org/Index.aspx", "Project Link"],
-            caption: "American Academy of Pediatrics share an integrated platform, with quick and easy access to well-care guides, acute-care answers, patient education, and pediatric coding."
-          },
-          {
-            title: 'American Society of Anesthesiologists',
-            category: 'Web Development',
-            image: ["asa", "American Society of Anesthesiologists", "alt-text"],
-            link: ["http://anesthesiology.pubs.asahq.org/journal.aspx", "Project Link"],
-            caption: "Anesthesiology founded in 1940, leads the world in publication of peer-reviewed novel research that transforms clinical practice and fundamental understanding in anesthesiology: the practice of perioperative, critical care, and pain medicine. Anesthesiology is the official journal of the American Society of Anesthesiologists but operates with complete editorial autonomy. With an independent and internationally recognized Editorial Board, the Journal leads the specialty in promotion of original research by providing immediate open access to highlighted articles and free access to all published articles 6 months after publication, supported by an active press release program. Anesthesiology is committed to publishing and disseminating the highest quality work to inform daily clinical practice and transform the practice of medicine in our specialty."
-          },
+          // {
+          //   title: 'American Academy of Pediatrics',
+          //   category: 'Web Development',
+          //   image: ["aap", "American Academy of Pediatrics", "alt-text"],
+          //   link: ["https://solutions.aap.org/Index.aspx", "Project Link"],
+          //   caption: "American Academy of Pediatrics share an integrated platform, with quick and easy access to well-care guides, acute-care answers, patient education, and pediatric coding."
+          // },
+          // {
+          //   title: 'American Society of Anesthesiologists',
+          //   category: 'Web Development',
+          //   image: ["asa", "American Society of Anesthesiologists", "alt-text"],
+          //   link: ["http://anesthesiology.pubs.asahq.org/journal.aspx", "Project Link"],
+          //   caption: "Anesthesiology founded in 1940, leads the world in publication of peer-reviewed novel research that transforms clinical practice and fundamental understanding in anesthesiology: the practice of perioperative, critical care, and pain medicine. Anesthesiology is the official journal of the American Society of Anesthesiologists but operates with complete editorial autonomy. With an independent and internationally recognized Editorial Board, the Journal leads the specialty in promotion of original research by providing immediate open access to highlighted articles and free access to all published articles 6 months after publication, supported by an active press release program. Anesthesiology is committed to publishing and disseminating the highest quality work to inform daily clinical practice and transform the practice of medicine in our specialty."
+          // },
           // {
           //   title: 'The Liberty',
           //   category: 'Branding',
