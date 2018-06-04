@@ -1,8 +1,9 @@
 <template>
   <section class="layout">
     <Header />
+
     <article class="blog-single">
-      <div class="page-header page-header--single page-hero" style="background-image:url(images/blog/blog-bg-02.jpg)">
+      <div class="page-header page-header--single page-hero" style="background-image:url(../../../static/images/blog/blog-bg-02.jpg)">
 
             <div class="row page-header__content narrow">
                 <article class="col-full">
@@ -17,9 +18,7 @@
                         </div>
                     </div>
                     <h1 class="page-header__title">
-                        <a href="#0" title="">
-                            {{ post.title }}
-                        </a>
+                        <a title=""> {{ post.title }} </a>
                     </h1>
                     <ul class="page-header__meta">
                         <li class="date">{{ post.published | formatDate }}</li>
@@ -65,14 +64,13 @@
                   </div>
 
                   <div class="blog-content__all">
-                      <a href="blog.html" class="btn btn--primary">
-                          View All Post
-                      </a>
+                      <router-link to="/blog" class="btn btn--primary">View All Post</router-link>
                   </div>
               </div>
             </div>
         </div>
     </article>
+
     <Footer />
 
   </section>
@@ -91,20 +89,22 @@
       return {
         post: {},
         meta: {},
-        author: {}
+        author: {},
+        error: []
       }
     },
     methods: {
       getPost() {
         butter.post.retrieve(this.$route.params.slug)
           .then((res) => {
-            console.log(res.data)
+            //console.log(res.data)
             this.post = res.data.data
             this.meta = res.data.meta
             this.author = res.data.data.author
           }).catch((res) => {
             // eslint-disable-next-line no-console
-            console.log(res)
+            //console.log(res)
+            this.error.push(res);
           })
       }
     },
