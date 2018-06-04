@@ -443,21 +443,6 @@ export default {
       }
     }
   }
-  .scrollmagic-pin-spacer {
-    padding: 0!important;
-    //z-index: 9999!important;
-    width: 100%!important;
-    height: 300px!important;
-    z-index: 100;
-  }
-
-  #pinned_wrapper, #sky, #city, #skyline-wrapper, #skyline  {
-    height: 300px!important;
-  }
-
-  #pinned_wrapper #walker {
-    top: 41%!important;
-  }
 
   .s-home {
     z-index: 101;
