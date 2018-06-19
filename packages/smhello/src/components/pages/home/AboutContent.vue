@@ -56,10 +56,10 @@
       <div class="row about-content about-content--buttons">
 
           <div class="col-six tab-full left">
-              <a href="#0" class="btn btn--primary full-width">Download My CV</a>
+              <a href="https://www.linkedin.com/in/subashmaharjan/" class="btn btn--primary full-width">Download My CV</a>
           </div>
           <div class="col-six tab-full right">
-              <a href="#0" class="btn full-width">Hire Me Now</a>
+              <a href="mailto:hudeomah@gmail.com" class="btn full-width">Hire Me Now</a>
           </div>
 
       </div> <!-- end about-content buttons -->
@@ -76,7 +76,7 @@
                   <div class="timeline__bullet"></div>
                   <div class="timeline__header">
                       <p class="timeline__timeframe">{{ data.timeframe.start }} - {{ data.timeframe.end }}</p>
-                      <h3>{{ data.agency }}</h3>
+                      <h3><a :href="data.links">{{ data.agency }}</a></h3>
                       <h5>{{ data.location }}</h5>
                       <h6>{{ data.position }}</h6>
                   </div>
@@ -92,6 +92,7 @@
 </template>
 
 <script>
+
   export default {
     data() {
       return {
@@ -103,6 +104,7 @@
               end: "Present"
             },
             agency: "Updater",
+            links: "http://www.updater.com/",
             position: "Senior Frontend Engineer",
             location: "Charlottesville, Virginia",
             description: "Updater is a technology company that builds powerful tools to help people move. Updater's digital tools help people find and reserve trustworthy moving companies, connect home services, forward their mail, transfer utilities, update accounts, and much more – all in one easy-to-use platform."
@@ -113,6 +115,7 @@
               end: "March 2018"
             },
             agency: "Digital Management",
+            links: "https://dminc.com/",
             location: "Charlottesville, Virginia",
             position: "Senior Frontend Developer - Javascript",
             description: "DMI is a global, end-to-end mobility company that offers a variety of solutions including Mobility Strategy, Brand Marketing, UX, Web & App Development, Omnichannel Commerce, Big Data Insights, Managed Mobility Services, Cybersecurity Solutions and Infrastructure Services."
@@ -123,6 +126,7 @@
               end: "November 2015"
             },
             agency: "Silverchair",
+            links: "https://www.silverchair.com/",
             position: "Senior UI Developer",
             location: "Charlottesville, Virginia",
             description: "Silverchair designs and develops semantic technologies, publishing platforms, and e-learning solutions to scientific, technical and medical publishers, academic medical centers, professional societies, and the federal government in the United States."
@@ -133,6 +137,7 @@
               end: "April 2011"
             },
             agency: "Enviroapps",
+            links: "http://www.enviroapps.com/",
             position: "UI Developer",
             location: "Orlando, Florida",
             description: "EnviroApps bring solutions to modern challenges using environment friendly technologies empowered by human imagination and care for the future generation. Their process of engineering development and deployment follow the GISTS (Green Infra Structure Technology Solutions) architecture to be eco-efficient and help transforming our engineers’ imaginative ideas in to products and solutions."
