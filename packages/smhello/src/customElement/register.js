@@ -54,7 +54,7 @@ export default function register(
          */
          routerMode: {
            type: String,
-           default: "hash"
+           default: "history"
          }
      }),
 

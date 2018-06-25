@@ -14,8 +14,8 @@ import Styles from '@/components/pages/Styles'
 Vue.use(Router)
 
 export default (base, mode) => new Router({
-  base: "/",
-  mode: "history",
+  base,
+  mode,
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) {
       return {
