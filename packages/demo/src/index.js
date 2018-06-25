@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom';
 // web components polyfill
 import "@webcomponents/webcomponentsjs/webcomponents-lite";
 // our component(s)
-import 'smhello';
+//import 'smhello';
 
 import './index.css';
 import App from './App';
