@@ -17,7 +17,9 @@
   "dependencies": {
     "@vue/web-component-wrapper": "^1.2.0",
     "axios": "^0.18.0",
+    "babel-preset-es2015": "^6.24.1",
     "buttercms": "^1.1.1",
+    "eslint-plugin-json": "^1.2.0",
     "flexboxgrid": "^6.3.1",
     "foundation-sites": "^6.4.4-rc1",
     "gsap": "^1.20.4",
@@ -35,6 +37,7 @@
     "vue-in-viewport-mixin": "^1.0.4",
     "vue-masonry": "^0.11.1",
     "vue-parallaxy": "^1.1.1",
+    "vue-photoswipe": "^1.0.3",
     "vue-router": "^3.0.1",
     "vue-scrollactive": "^0.6.1",
     "vue-scrollview": "^3.0.1",
