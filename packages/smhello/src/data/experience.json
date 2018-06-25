@@ -1,0 +1,48 @@
+{
+  "experience": [
+    {
+      "timeframe": {
+        "start": "March 2018",
+        "end": "Present"
+      },
+      "agency": "Updater",
+      "links": "http://www.updater.com/",
+      "position": "Senior Frontend Engineer",
+      "location": "Charlottesville, Virginia",
+      "description": "Updater is a technology company that builds powerful tools to help people move. Updater's digital tools help people find and reserve trustworthy moving companies, connect home services, forward their mail, transfer utilities, update accounts, and much more – all in one easy-to-use platform."
+    },
+    {
+      "timeframe": {
+        "start": "December 2015",
+        "end": "March 2018"
+      },
+      "agency": "Digital Management",
+      "links": "https://dminc.com/",
+      "location": "Charlottesville, Virginia",
+      "position": "Senior Frontend Developer - Javascript",
+      "description": "DMI is a global, end-to-end mobility company that offers a variety of solutions including Mobility Strategy, Brand Marketing, UX, Web & App Development, Omnichannel Commerce, Big Data Insights, Managed Mobility Services, Cybersecurity Solutions and Infrastructure Services."
+    },
+    {
+      "timeframe": {
+        "start": "April 2011",
+        "end": "November 2015"
+      },
+      "agency": "Silverchair",
+      "links": "https://www.silverchair.com/",
+      "position": "Senior UI Developer",
+      "location": "Charlottesville, Virginia",
+      "description": "Silverchair designs and develops semantic technologies, publishing platforms, and e-learning solutions to scientific, technical and medical publishers, academic medical centers, professional societies, and the federal government in the United States."
+    },
+    {
+      "timeframe": {
+        "start": "April 2009",
+        "end": "April 2011"
+      },
+      "agency": "Enviroapps",
+      "links": "http://www.enviroapps.com/",
+      "position": "UI Developer",
+      "location": "Orlando, Florida",
+      "description": "EnviroApps bring solutions to modern challenges using environment friendly technologies empowered by human imagination and care for the future generation. Their process of engineering development and deployment follow the GISTS (Green Infra Structure Technology Solutions) architecture to be eco-efficient and help transforming our engineers’ imaginative ideas in to products and solutions."
+    }
+  ]
+}

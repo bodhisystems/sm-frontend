@@ -1,0 +1,18 @@
+{
+  "testimonials": [
+    {
+      "imageSrc": "https://media.licdn.com/dms/image/C5603AQH_x45isp5jsg/profile-displayphoto-shrink_100_100/0?e=1533168000&v=beta&t=8DWggXsepFlEQOS7Yjh7VqWcrlBB9D6_vhK1fYcD0pk",
+      "altText": "Author image",
+      "description": "When I started at Silverchair, I had only a little experience with XSLT. Subash took the time to explain the data process flows, gave me tools that he had developed and basically 'taught me to fish'. He enabled me to be successful on many tasks much sooner than I would have been otherwise.",
+      "author": "Elizabeth Schley",
+      "position": "Web Developer, Teachstone"
+    },
+    {
+      "imageSrc": "https://media.licdn.com/dms/image/C5603AQFlY41vUDYaAA/profile-displayphoto-shrink_100_100/0?e=1533168000&v=beta&t=5SBAVyYj0dwQm1oxs6AKGjXjSNF1pBkjbXqJK-GyuRk",
+      "altText": "Author image",
+      "description": "Subash is Hardworking, Energetic and Enthusiastic Person. Subash always goes beyond the requirements to fulfill the work. Subash puts in extra effort to complete successful projects. He has willingness to learn new technologies and implement them within short period of time. I strongly recommend Subash and wish him all the success. He will be in my team anytime.",
+      "author": "Makesh Karuppiah",
+      "position": "Enviromental Scientist & Senior Information Technologist, Enviroapps"
+    }
+  ]
+}

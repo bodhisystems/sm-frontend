@@ -1,0 +1,38 @@
+{
+  "about": {
+    "us": {
+      "name": "Family",
+      "gallery": "http://subashmaharjan.com/smgallery/#15289210124986",
+      "imageUrl": "../../../static/images/family.jpg",
+      "msg": "Welcome to <a href='http://www.wikiwand.com/en/Maharjan' target='_blank'>Maharjan</a> and <a href='https://en.wikipedia.org/wiki/Sherpa_people' target='_blank'>Sherpa</a> Family. My wife and myself came from <a href='https://en.wikipedia.org/wiki/Kathmandu' target='_blank'>Kathmandu</a>, <a href='https://en.wikipedia.org/wiki/Nepal' target='_blank'>Nepal</a>. I was born at <a href='http://ourharisiddhi.org/about/Brief_History.php' target='_blank'>Harisiddhi</a>, a small town\nnear by <a href='https://en.wikipedia.org/wiki/Kathmandu' target='_blank'>Kathmandu</a>, <a href='https://en.wikipedia.org/wiki/Nepal' target='_blank'>Nepal</a>, and my wife is from <a href='https://en.wikipedia.org/wiki/Taplejung_District' target='_blank'>Taplejung</a>, a far north-eastern remote village of <a href='https://en.wikipedia.org/wiki/Nepal' target='_blank'>Nepal</a> which is border with China at North and India at East. We came to United States in 2006. We met at College in Kathmandu. Currently, we live in <a href='http://www.charlottesville.org/'' target='_blank'>Charlottesville</a>, <a href='https://www.virginia.gov/' target='_blank'>Virginia</a> with our two beautiful kids. Both of my kids\nwere born here."
+    },
+    "subashm": {
+      "name": "Subash Maharjan",
+      "gallery": "http://subashmaharjan.com/smgallery/#15288443096062",
+      "imageUrl": "../../../static/images/hero-bg.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/1b18570bc6c332ef131e6956ea0a3f15@2x.jpeg",
+      "birthDate": "4/17/1984"
+    },
+    "saraswatis": {
+      "name": "Saraswati Sherpa",
+      "gallery": "http://subashmaharjan.com/smgallery/#15288442762367",
+      "imageUrl": "../../../static/images/saraswati.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/5f29d69634eb66ea0aa98ddd13f7abcf@2x.jpeg",
+      "birthDate": "3/16/1985"
+    },
+    "shangrilam": {
+      "name": "Shangrila Maharjan",
+      "gallery": "http://subashmaharjan.com/smgallery/#15072144815958",
+      "imageUrl": "../../../static/images/shangrila.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/66884142da4758205ed529797f4c0898@2x.jpeg",
+      "birthDate": "7/28/2012"
+    },
+    "nirvaanm": {
+      "name": "Nirvaan Maharjan",
+      "gallery": "http://subashmaharjan.com/smgallery/#15072176573119",
+      "imageUrl": "../../../static/images/nirvaan.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/840acbfd03e1fffcbe8cd54dbfb9b63c@2x.jpeg",
+      "birthDate": "8/10/2017"
+    }
+  }
+}
