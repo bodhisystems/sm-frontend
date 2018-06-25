@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import createPersistedState from "vuex-persistedstate";
 
+import config from "./modules/config";
 import navigation from './modules/navigation'
 import portfolio from './modules/portfolio'
 
@@ -18,6 +19,7 @@ export default new Vuex.Store({
     })
   ],
   modules: {
+    config,
     navigation,
     portfolio
   }
