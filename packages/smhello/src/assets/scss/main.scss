@@ -1398,6 +1398,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     letter-spacing: .2rem;
     color: #000000;
     margin-top: -.9rem;
+    cursor: pointer;
 }
 
 .blog-list .blog-cat a {
@@ -1658,6 +1659,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .header-nav li a.router-link-active {
     font-family: "montserrat-extrabold", sans-serif;
+}
+.header-nav li a.router-link-exact-active {
     color: #af2b2b;
 }
 
