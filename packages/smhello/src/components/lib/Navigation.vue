@@ -1,18 +1,19 @@
 <template>
   <div>
-    <a class="header-menu-toggle" :class="{ 'is-clicked': open }" href="#0" @click="open = !open"><span>Menu</span></a>
+    <a class="header-menu-toggle" :class="{ 'is-clicked': open }" @click="open = !open"><span>Menu</span></a>
 
       <nav class="header-nav-wrap" :class="{ 'mobile': isMobile, 'slideDown' : open, 'slideUp' : !open }">
           <ul class="header-nav">
-              <!-- <li ref="homeLink"><router-link to="/">Home</router-link></li> -->
+              <li ref="homeLink"><router-link to="/">Home</router-link></li>
               <li ref="aboutLink"><router-link to="/about">About</router-link></li>
               <li ref="worksLink"><router-link to="/works">Works</router-link></li>
               <li ref="blogLink"><router-link to="/blog">Blog</router-link></li>
+              <li ref="resumeLink"><router-link to="/resume">Resume</router-link></li>
               <!-- <li ref="contactLink"><router-link to="/contact">Contact</router-link></li> -->
           </ul>
       </nav>
 
-      <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
+      <!-- <a class="header-menu-toggle"><span>Menu</span></a> -->
 
   </div>
 </template>

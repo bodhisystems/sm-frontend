@@ -40,7 +40,7 @@ export default {
     .header-nav {
       li a {
         color: #999;
-        &.router-link-active {
+        &.router-link-exact-active {
           color: #af2b2b;
         }
       }

@@ -12,6 +12,8 @@ import { registerCustomElement } from "./customElement";
 
 import baseCss from "./assets/scss/base.scss";
 import vendorCss from "./assets/scss/vendor.scss";
+import IconicFontCss from "./assets/scss/iconic/iconmonstr-iconic-font.scss";
+import FontCss from "./assets/scss/fonts.scss";
 import mainCss from "./assets/scss/main.scss";
 import Component from './Component';
 import routerFactory from './router';
@@ -21,11 +23,13 @@ import {VueMasonryPlugin} from 'vue-masonry';
 import VueScrollactive from 'vue-scrollactive';
 import VueAnimateNumber from 'vue-animate-number';
 import BackToTop from 'vue-backtotop'
+import VuePhotoSwipe from 'vue-photoswipe'
 
 Vue.use(VueMasonryPlugin)
 Vue.use(VueScrollactive)
 Vue.use(VueAnimateNumber)
 Vue.use(BackToTop)
+Vue.use(VuePhotoSwipe)
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);
@@ -99,6 +103,9 @@ registerCustomElement(Component, {
         mounted() {
           // inject styles
           this.injectStyles(baseCss);
+          this.injectStyles(vendorCss);
+          this.injectStyles(IconicFontCss);
+          this.injectStyles(FontCss);
           this.injectStyles(vendorCss);
           this.injectStyles(mainCss);
 

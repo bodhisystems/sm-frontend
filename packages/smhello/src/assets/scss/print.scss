@@ -1,0 +1,49 @@
+html, body {
+  height:95%;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  width: 297mm;
+}
+@page {
+   //size: 8.5in 11.75in;
+   margin: 0pt 20pt;
+   padding: 0pt;
+   width: 297mm;
+}
+
+header, footer {
+  display: none;
+}
+
+#resume {
+  .top-section, .s-about {
+    margin-top: 0pt;
+    padding-top: 0pt;
+  }
+  #html-2-pdfwrapper {
+    width: 297mm;
+    margin: 0;
+    padding: 0;
+  }
+  .no-print, .s-header, footer {
+    display: none;
+  }
+
+  address p {
+    margin-bottom: 0;
+    a { font-style: normal;}
+    br, span { display: none; }
+  }
+  address p span  {
+    display: none;
+  }
+
+  .experience-column {
+    .hide {
+      display: block!important;
+    }
+  }
+
+  .timeline__block { padding: 0; }
+}
