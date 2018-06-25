@@ -1,6 +1,6 @@
 <template>
   <section class="layout">
-    <HomeHeader />
+    <Header />
     <walker />
     <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
        <Overlay />
@@ -47,7 +47,7 @@ import PhotoSwipe from '@/components/shared/PhotoSwipe'
 import Testimonials from '@/components/shared/Testimonials'
 
 // Pages
-import HomeHeader from '@/components/pages/home/HomeHeader'
+import Header from '@/components/shared/Header'
 import HomeContent from '@/components/pages/home/HomeContent'
 import AboutContent from '@/components/pages/home/AboutContent'
 import BlogContent from '@/components/pages/home/BlogContent'
@@ -58,7 +58,7 @@ export default {
   components: {
     Cta,
     Footer,
-    HomeHeader,
+    Header,
     PhotoSwipe,
     // Stats,
     Testimonials,
