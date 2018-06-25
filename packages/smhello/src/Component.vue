@@ -1,6 +1,6 @@
 <template>
   <div :class="loaderClass">
-    <router-view />
+    <router-view  :key="$route.fullPath"/>
 
     <transition name="fade">
       <div id="preloader" v-if="isPreloading">

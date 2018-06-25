@@ -61,12 +61,17 @@
                     <h2 class="h01"><router-link :to="'/blog/' + post.slug">{{ post.title }}</router-link></h2>
                     <p>{{ post.summary }}</p>
                     <div class="blog-cat">
-                        <router-link
+                        <!-- <router-link
                           v-for="(category, index) in post.categories"
                           :key="category.slug + '_' + index"
                           :to="'/blog/' + category.slug">
                           {{ category.name }}
-                        </router-link>
+                        </router-link> -->
+                        <a v-for="(category, index) in post.categories"
+                          :key="category.slug + '_' + index"
+                          @click="getPostsByCategory(category.slug)">
+                          {{ category.name }}
+                        </a>
                     </div>
                   </article>
                 </div>

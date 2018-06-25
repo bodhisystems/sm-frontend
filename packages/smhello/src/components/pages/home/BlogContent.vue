@@ -7,7 +7,7 @@
                 <div class="blog-date">
                     <a href="blog-single.html">{{ post.published | formatDate }}</a>
                 </div>
-                <h2 class="h01"><router-link :to="'/blog/' + post.slug">{{ post.title }}</router-link></h2>
+                <h2 class="h01"><router-link :to="'blog/' + post.slug">{{ post.title }}</router-link></h2>
                 <p>{{ post.summary }}</p>
                 <div class="blog-cat">
                     <router-link

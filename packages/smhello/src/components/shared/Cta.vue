@@ -16,7 +16,7 @@
               <div class="cta__action">
 
 
-                  <a class="btn btn--primary btn--large" href="https://www.bluehost.com/track/bodhisystems/">Sign Up Now</a>
+                  <a class="btn btn--primary btn--large" href="https://www.bluehost.com/track/bodhisystems/" target="_blank">Sign Up Now</a>
               </div>
 
           </div>
