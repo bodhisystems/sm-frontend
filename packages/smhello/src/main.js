@@ -23,11 +23,13 @@ import {VueMasonryPlugin} from 'vue-masonry';
 import VueScrollactive from 'vue-scrollactive';
 import VueAnimateNumber from 'vue-animate-number';
 import BackToTop from 'vue-backtotop'
+import VuePhotoSwipe from 'vue-photoswipe'
 
 Vue.use(VueMasonryPlugin)
 Vue.use(VueScrollactive)
 Vue.use(VueAnimateNumber)
 Vue.use(BackToTop)
+Vue.use(VuePhotoSwipe)
 
 // register the vue-awesome icon component
 Vue.component("icon", Icon);
