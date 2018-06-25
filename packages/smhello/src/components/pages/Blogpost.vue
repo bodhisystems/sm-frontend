@@ -45,6 +45,11 @@
                         :to="'/blog/' + tag.slug">
                         {{ tag.name }}
                       </router-link>
+                      <!-- <a v-for="(tag, index) in post.tags"
+                        :key="tag.slug + '_' + index"
+                        @click="getPostsByTags(tag.slug)">
+                        {{ tag.name }}
+                      </a> -->
                   </span>
 
               </p>
@@ -106,7 +111,17 @@
             //console.log(res)
             this.error.push(res);
           })
-      }
+      },
+      getPostsByTags(tag) {
+        butter.category.retrieve(tag, {
+            include: 'recent_posts'
+          })
+          .then((res) => {
+            //console.log('Posts with specific category:')
+            //console.log(res.data)
+            this.posts = res.data.data.recent_posts
+          })
+      },
     },
     watch: {
       $route() {

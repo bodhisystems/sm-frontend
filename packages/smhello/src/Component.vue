@@ -27,6 +27,7 @@ export default {
     }
   },
   mounted() {
+    this.$store.dispatch("portfolio/init");
     setTimeout(()=>{
       this.loading = false
       setTimeout(()=>{

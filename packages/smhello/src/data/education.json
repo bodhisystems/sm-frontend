@@ -1,0 +1,59 @@
+{
+  "education": [
+    {
+      "timeframe": {
+        "start": "August 2006",
+        "end": "June 2009"
+      },
+      "agency": "Everest University",
+      "links": "https://en.wikipedia.org/wiki/Everest_University",
+      "position": "Master of Business Administration",
+      "location": "Orlando, Florida",
+      "description": ""
+    },
+    {
+      "timeframe": {
+        "start": "August 2002",
+        "end": "August 2006"
+      },
+      "agency": "Kantipur City College",
+      "links": "http://kcc.edu.np/",
+      "location": "Kathmandu, Nepal",
+      "position": "Bachelor of Computer Application",
+      "description": ""
+    },
+    {
+      "timeframe": {
+        "start": "March 2000",
+        "end": "March 2002"
+      },
+      "agency": "Kathmandu Model College",
+      "links": "http://www.ktmmodelcollege.edu.np/",
+      "position": "High School",
+      "location": "Kathmandu, Nepal",
+      "description": ""
+    },
+    {
+      "timeframe": {
+        "start": "January 1994",
+        "end": "January 2000"
+      },
+      "agency": "Shree Harisiddhi Higher Secondary School",
+      "links": "http://www.ourharisiddhi.org",
+      "position": "4th Grade to 10th Grade",
+      "location": "Lalitpur, Nepal",
+      "description": ""
+    },
+    {
+      "timeframe": {
+        "start": "January 1989",
+        "end": "January 1994"
+      },
+      "agency": "Himalaya Boarding School",
+      "links": "",
+      "position": "Kindergarten to 3rd Grade",
+      "location": "Lalitpur, Nepal",
+      "description": ""
+    }
+  ]
+}

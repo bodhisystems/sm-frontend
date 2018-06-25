@@ -1,6 +1,6 @@
 // load vue and vuex instance
 import Vue from 'vue'
-import axios from 'axios'
+//import axios from 'axios'
 // load vuex i18n module
 import VuexI18n from 'vuex-i18n'
 
@@ -21,23 +21,23 @@ import translationsNe from './ne.json'
 // the store must be passed to the plugin. the plugin will then generate some
 // helper functions for components (i.e. this.$i18n.set, this.$t) and on the vue
 // instance (i.e. Vue.i18n.set).
-// Vue.use(VuexI18n.plugin, store);
+ Vue.use(VuexI18n.plugin, store);
 
 // with promise as return value. this will write the new value into the store,
 // after the promise is resolved
-Vue.use(VuexI18n.plugin, store, {
-    moduleName: 'i18n',
-	  onTranslationNotFound(locale, key) {
-        return new Promise((resolve, reject) => {
-            axios.get('/api/translations/async', { locale: locale, key: key })
-            .then((result) => {
-                resolve(result.data);
-            }).catch(() => {
-                reject();
-            })
-        })
-    }
-});
+// Vue.use(VuexI18n.plugin, store, {
+//     moduleName: 'i18n',
+// 	  onTranslationNotFound(locale, key) {
+//         return new Promise((resolve, reject) => {
+//             axios.get('/api/translations/async', { locale: locale, key: key })
+//             .then((result) => {
+//                 resolve(result.data);
+//             }).catch(() => {
+//                 reject();
+//             })
+//         })
+//     }
+// });
 
 
 // please note that you must specify the name of the vuex module if it is

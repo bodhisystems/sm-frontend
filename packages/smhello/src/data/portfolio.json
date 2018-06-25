@@ -1,153 +1,251 @@
 {
-  "work": {
-    "subash-maharjan": {
-      "title": "Subash Maharjan",
-      "thumbnail": "https://source.unsplash.com/category/technology/700x700",
-      "orientation": "wide",
-      "details": [
-        {
-          "title": "Overview",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Client",
-              "content": "Subash Maharjan"
-            }
-          ]
-        },
-        {
-          "title": "Tech",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Front-end",
-              "content": "Vue, GreenSock"
-            }
-          ]
-        }
-      ]
+  "about": {
+    "us": {
+      "name": "Family",
+      "gallery": "http://subashmaharjan.com/smgallery/#15289210124986",
+      "imageUrl": "../../../static/images/family.jpg",
+      "msg": "Welcome to <a href='http://www.wikiwand.com/en/Maharjan' target='_blank'>Maharjan</a> and <a href='https://en.wikipedia.org/wiki/Sherpa_people' target='_blank'>Sherpa</a> Family. My wife and myself came from <a href='https://en.wikipedia.org/wiki/Kathmandu' target='_blank'>Kathmandu</a>, <a href='https://en.wikipedia.org/wiki/Nepal' target='_blank'>Nepal</a>. I was born at <a href='http://ourharisiddhi.org/about/Brief_History.php' target='_blank'>Harisiddhi</a>, a small town\nnear by <a href='https://en.wikipedia.org/wiki/Kathmandu' target='_blank'>Kathmandu</a>, <a href='https://en.wikipedia.org/wiki/Nepal' target='_blank'>Nepal</a>, and my wife is from <a href='https://en.wikipedia.org/wiki/Taplejung_District' target='_blank'>Taplejung</a>, a far north-eastern remote village of <a href='https://en.wikipedia.org/wiki/Nepal' target='_blank'>Nepal</a> which is border with China at North and India at East. We came to United States in 2006. We met at College in Kathmandu. Currently, we live in <a href='http://www.charlottesville.org/'' target='_blank'>Charlottesville</a>, <a href='https://www.virginia.gov/' target='_blank'>Virginia</a> with our two beautiful kids. Both of my kids\nwere born here."
     },
-    "forevermark-marketing-portal": {
-      "title": "Forevermark Marketing Portal",
-      "thumbnail": "https://source.unsplash.com/category/technology/800x800",
-      "orientation": "wide",
-      "details": [
-        {
-          "title": "Overview",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Client",
-              "content": "some client"
-            }
-          ]
-        },
-        {
-          "title": "Tech",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Front-end",
-              "content": "Vue, GreenSock"
-            }
-          ]
-        }
-      ]
+    "subashm": {
+      "name": "Subash Maharjan",
+      "gallery": "http://subashmaharjan.com/smgallery/#15288443096062",
+      "imageUrl": "../../../static/images/hero-bg.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/1b18570bc6c332ef131e6956ea0a3f15@2x.jpeg",
+      "birthDate": "4/17/1984"
     },
-    "island-of-hackable-toys": {
-      "title": "Island of Hackable Toys",
-      "thumbnail": "https://source.unsplash.com/category/technology/600x600",
-      "orientation": "wide",
-      "details": [
-        {
-          "title": "Overview",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Client",
-              "content": "some client"
-            }
-          ]
-        },
-        {
-          "title": "Tech",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Front-end",
-              "content": "Vue, GreenSock"
-            }
-          ]
-        }
-      ]
+    "saraswatis": {
+      "name": "Saraswati Sherpa",
+      "gallery": "http://subashmaharjan.com/smgallery/#15288442762367",
+      "imageUrl": "../../../static/images/saraswati.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/5f29d69634eb66ea0aa98ddd13f7abcf@2x.jpeg",
+      "birthDate": "3/16/1985"
     },
-    "accurate-silentpak": {
-      "title": "Accurate SilentPak",
-      "thumbnail": "https://source.unsplash.com/category/technology/300x600",
-      "orientation": "narrow",
-      "details": [
-        {
-          "title": "Overview",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Client",
-              "content": "some client"
-            }
-          ]
-        },
-        {
-          "title": "Tech",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Front-end",
-              "content": "Vue, GreenSock"
-            }
-          ]
-        }
-      ]
+    "shangrilam": {
+      "name": "Shangrila Maharjan",
+      "gallery": "http://subashmaharjan.com/smgallery/#15072144815958",
+      "imageUrl": "../../../static/images/shangrila.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/66884142da4758205ed529797f4c0898@2x.jpeg",
+      "birthDate": "7/28/2012"
     },
-    "uncle-julios-chocolate-pinata": {
-      "title": "Uncle Julio's Chocolate Pinata",
-      "thumbnail": "https://source.unsplash.com/category/technology/350x600",
-      "orientation": "narrow",
-      "details": [
-        {
-          "title": "Overview",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Client",
-              "content": "some client"
-            }
-          ]
-        },
-        {
-          "title": "Tech",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          "meta": [
-            {
-              "title": "Front-end",
-              "content": "Vue, GreenSock"
-            }
-          ]
-        }
-      ]
+    "nirvaanm": {
+      "name": "Nirvaan Maharjan",
+      "gallery": "http://subashmaharjan.com/smgallery/#15072176573119",
+      "imageUrl": "../../../static/images/nirvaan.jpg",
+      "avatar": "http://subashmaharjan.com/smgallery/uploads/thumb/840acbfd03e1fffcbe8cd54dbfb9b63c@2x.jpeg",
+      "birthDate": "8/10/2017"
     }
   },
-  "services": {
-    "Websites": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  "resume": {
+    "experience": [
+      {
+        "timeframe": {
+          "start": "March 2018",
+          "end": "Present"
+        },
+        "agency": "Updater",
+        "links": "http://www.updater.com/",
+        "position": "Senior Frontend Engineer",
+        "location": "Charlottesville, Virginia",
+        "description": "Updater is a technology company that builds powerful tools to help people move. Updater's digital tools help people find and reserve trustworthy moving companies, connect home services, forward their mail, transfer utilities, update accounts, and much more – all in one easy-to-use platform."
+      },
+      {
+        "timeframe": {
+          "start": "December 2015",
+          "end": "March 2018"
+        },
+        "agency": "Digital Management",
+        "links": "https://dminc.com/",
+        "location": "Charlottesville, Virginia",
+        "position": "Senior Frontend Developer - Javascript",
+        "description": "DMI is a global, end-to-end mobility company that offers a variety of solutions including Mobility Strategy, Brand Marketing, UX, Web & App Development, Omnichannel Commerce, Big Data Insights, Managed Mobility Services, Cybersecurity Solutions and Infrastructure Services."
+      },
+      {
+        "timeframe": {
+          "start": "April 2011",
+          "end": "November 2015"
+        },
+        "agency": "Silverchair",
+        "links": "https://www.silverchair.com/",
+        "position": "Senior UI Developer",
+        "location": "Charlottesville, Virginia",
+        "description": "Silverchair designs and develops semantic technologies, publishing platforms, and e-learning solutions to scientific, technical and medical publishers, academic medical centers, professional societies, and the federal government in the United States."
+      },
+      {
+        "timeframe": {
+          "start": "April 2009",
+          "end": "April 2011"
+        },
+        "agency": "Enviroapps",
+        "links": "http://www.enviroapps.com/",
+        "position": "UI Developer",
+        "location": "Orlando, Florida",
+        "description": "EnviroApps bring solutions to modern challenges using environment friendly technologies empowered by human imagination and care for the future generation. Their process of engineering development and deployment follow the GISTS (Green Infra Structure Technology Solutions) architecture to be eco-efficient and help transforming our engineers’ imaginative ideas in to products and solutions."
+      }
+    ],
+    "education": [
+      {
+        "timeframe": {
+          "start": "August 2006",
+          "end": "June 2009"
+        },
+        "agency": "Everest University",
+        "links": "https://en.wikipedia.org/wiki/Everest_University",
+        "position": "Master of Business Administration",
+        "location": "Orlando, Florida",
+        "description": ""
+      },
+      {
+        "timeframe": {
+          "start": "August 2002",
+          "end": "August 2006"
+        },
+        "agency": "Kantipur City College",
+        "links": "http://kcc.edu.np/",
+        "location": "Kathmandu, Nepal",
+        "position": "Bachelor of Computer Application",
+        "description": ""
+      },
+      {
+        "timeframe": {
+          "start": "March 2000",
+          "end": "March 2002"
+        },
+        "agency": "Kathmandu Model College",
+        "links": "http://www.ktmmodelcollege.edu.np/",
+        "position": "High School",
+        "location": "Kathmandu, Nepal",
+        "description": ""
+      }
+    ]
+  },
+  "works": [
+    {
+      "title": "AMS MARS",
+      "category": "Web Development",
+      "image": [
+        "mars",
+        "My Market News",
+        "alt-text"
+      ],
+      "link": [
+        "https://mymarketnews.ams.usda.gov",
+        "Project Link"
+      ],
+      "caption": "Market News needs to improve transparency, speed, accuracy, and flexibility to remain relevant to agricultural market stakeholders. The Market Analysis & Reporting Services (MARS) is a standardized information management system which will assist Market News to collect and distribute information from remote locations by combining all reporting functions into a single, user-managed platform. MARS will facilitate the flow of data from the data provider to agency analysts and to the public, and allow users to create unique content."
     },
-    "Web Apps": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    {
+      "title": "Aclands Anatomy",
+      "category": "Web Development",
+      "image": [
+        "aclands",
+        "Aclands Anatomy",
+        "alt-text"
+      ],
+      "link": [
+        "http://aclandanatomy.com/",
+        "Project Link"
+      ],
+      "caption": "Aclands Video Atlas of Human Anatomy contains nearly 330 videos of real human anatomic specimens in their natural colors, including 5 new, groundbreaking videos of the inner ear. Dr. Robert Acland presents moving structures—muscles, tendons, and joints—making the same movements that they make in life. The videos show complex structures step by step—from bone to surface anatomy—to provide a foundation for understanding anatomical structure and function. The entire series was digitally re-mastered producing clearer, brighter, and more detailed videos than seen in previous versions"
     },
-    "iOS + Android": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    {
+      "title": "Royal College of Pediatrics and Child Health",
+      "category": "Web Development",
+      "image": [
+        "rcpch",
+        "Royal College of Pediatrics and Child Health",
+        "alt-text"
+      ],
+      "link": [
+        "https://www.rcpch.ac.uk/",
+        "Project Link"
+      ],
+      "caption": "Founded in 1996 and now with over 18,000 members across the world, we play a major role in postgraduate medical education, professional standards, research and policy."
     },
-    "Consulting": {
-      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    {
+      "title": "American Academy of Pediatrics",
+      "category": "Web Development",
+      "image": [
+        "aap",
+        "American Academy of Pediatrics",
+        "alt-text"
+      ],
+      "link": [
+        "https://solutions.aap.org/Index.aspx",
+        "Project Link"
+      ],
+      "caption": "American Academy of Pediatrics share an integrated platform, with quick and easy access to well-care guides, acute-care answers, patient education, and pediatric coding."
+    },
+    {
+      "title": "American Society of Anesthesiologists",
+      "category": "Web Development",
+      "image": [
+        "asa",
+        "American Society of Anesthesiologists",
+        "alt-text"
+      ],
+      "link": [
+        "http://anesthesiology.pubs.asahq.org/journal.aspx",
+        "Project Link"
+      ],
+      "caption": "Anesthesiology founded in 1940, leads the world in publication of peer-reviewed novel research that transforms clinical practice and fundamental understanding in anesthesiology: the practice of perioperative, critical care, and pain medicine. Anesthesiology is the official journal of the American Society of Anesthesiologists but operates with complete editorial autonomy. With an independent and internationally recognized Editorial Board, the Journal leads the specialty in promotion of original research by providing immediate open access to highlighted articles and free access to all published articles 6 months after publication, supported by an active press release program. Anesthesiology is committed to publishing and disseminating the highest quality work to inform daily clinical practice and transform the practice of medicine in our specialty."
+    },
+    {
+      "title": "The Liberty",
+      "category": "Branding",
+      "image": [
+        "liberty",
+        "The Liberty",
+        "alt-text"
+      ],
+      "link": [
+        "https://www.behance.net",
+        "Project Link"
+      ],
+      "caption": "Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi."
+    },
+    {
+      "title": "The Minimalismo",
+      "category": "Web Design",
+      "image": [
+        "minimalismo",
+        "The Minimalismo",
+        "alt-text"
+      ],
+      "link": [
+        "https://www.behance.net",
+        "Project Link"
+      ],
+      "caption": "Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi."
+    },
+    {
+      "title": "Lady Shutterbug",
+      "category": "Web Development",
+      "image": [
+        "shutterbug",
+        "Lady Shutterbug",
+        "alt-text"
+      ],
+      "link": [
+        "https://www.behance.net",
+        "Project Link"
+      ],
+      "caption": "Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi."
     }
-  }
+  ],
+  "testimonials": [
+    {
+      "imageSrc": "https://media.licdn.com/dms/image/C5603AQH_x45isp5jsg/profile-displayphoto-shrink_100_100/0?e=1533168000&v=beta&t=8DWggXsepFlEQOS7Yjh7VqWcrlBB9D6_vhK1fYcD0pk",
+      "altText": "Author image",
+      "description": "When I started at Silverchair, I had only a little experience with XSLT. Subash took the time to explain the data process flows, gave me tools that he had developed and basically 'taught me to fish'. He enabled me to be successful on many tasks much sooner than I would have been otherwise.",
+      "author": "Elizabeth Schley",
+      "position": "Web Developer, Teachstone"
+    },
+    {
+      "imageSrc": "https://media.licdn.com/dms/image/C5603AQFlY41vUDYaAA/profile-displayphoto-shrink_100_100/0?e=1533168000&v=beta&t=5SBAVyYj0dwQm1oxs6AKGjXjSNF1pBkjbXqJK-GyuRk",
+      "altText": "Author image",
+      "description": "Subash is Hardworking, Energetic and Enthusiastic Person. Subash always goes beyond the requirements to fulfill the work. Subash puts in extra effort to complete successful projects. He has willingness to learn new technologies and implement them within short period of time. I strongly recommend Subash and wish him all the success. He will be in my team anytime.",
+      "author": "Makesh Karuppiah",
+      "position": "Enviromental Scientist & Senior Information Technologist, Enviroapps"
+    }
+  ]
 }
