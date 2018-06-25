@@ -35,6 +35,7 @@
     "vue-in-viewport-mixin": "^1.0.4",
     "vue-masonry": "^0.11.1",
     "vue-parallaxy": "^1.1.1",
+    "vue-photoswipe": "^1.0.3",
     "vue-router": "^3.0.1",
     "vue-scrollactive": "^0.6.1",
     "vue-scrollview": "^3.0.1",
