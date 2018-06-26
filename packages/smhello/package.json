@@ -1,9 +1,10 @@
 {
   "name": "smhello",
-  "version": "0.0.1",
-  "description": "A Vue.js project",
+  "version": "0.0.2",
+  "description": "A Vue.js Portfolio project",
   "author": "Subash Maharjan <subashm@bodhisystems.com>",
-  "private": false,
+  "repository": "https://github.com/bodhisystems/sm-frontend",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
@@ -11,9 +12,12 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
-    "build": "node build/build.js",
-    "deploy": "node node_modules/s3-deploy/.bin/s3-deploy './dist/**' --cwd './dist/' --region us-east-1 --bucket smhello --profile subashm"
+    "build": "node build/build.js"
   },
+  "files": [
+    "dist"
+  ],
+  "main": "dist/static/js/app",
   "dependencies": {
     "@vue/web-component-wrapper": "^1.2.0",
     "axios": "^0.18.0",
