@@ -1,0 +1,225 @@
+{
+  "resume": {
+    "subashm": {
+      "firstname": "Subash",
+      "lastname": "Maharjan",
+      "position": "Fullstack Developer",
+      "contact": {
+        "phone": "3219486213",
+        "email": "",
+        "www": "",
+        "social": {
+          "linkedin": ""
+        }
+      },
+      "skillset": {
+        "hard_skills": {
+          "coding": 100,
+          "debugging": 75,
+          "database": 50
+        },
+        "languages": {
+          "HTML": 100,
+          "S(CSS)": 100,
+          "Javascript": 75
+        },
+        "soft_skills": {
+          "Leadership": 75,
+          "Collaboration": 75,
+          "Critical Thinking": 75
+        }
+      },
+      "objective": "Creative and detail oriented Fullstack Developer, with a passion for thoughtful UI/UX design, collaboration and development.",
+      "experience": [
+        {
+          "timeframe": {
+            "start": "March 2018",
+            "end": "Present"
+          },
+          "agency": "Updater",
+          "links": "http://www.updater.com/",
+          "position": "Senior Frontend Engineer",
+          "location": "Charlottesville, Virginia",
+          "description": "Updater is a technology company that builds powerful tools to help people move. Updater's digital tools help people find and reserve trustworthy moving companies, connect home services, forward their mail, transfer utilities, update accounts, and much more – all in one easy-to-use platform."
+        },
+        {
+          "timeframe": {
+            "start": "December 2015",
+            "end": "March 2018"
+          },
+          "agency": "Digital Management",
+          "links": "https://dminc.com/",
+          "location": "Charlottesville, Virginia",
+          "position": "Senior Frontend Developer - Javascript",
+          "description": "DMI is a global, end-to-end mobility company that offers a variety of solutions including Mobility Strategy, Brand Marketing, UX, Web & App Development, Omnichannel Commerce, Big Data Insights, Managed Mobility Services, Cybersecurity Solutions and Infrastructure Services."
+        },
+        {
+          "timeframe": {
+            "start": "April 2011",
+            "end": "November 2015"
+          },
+          "agency": "Silverchair",
+          "links": "https://www.silverchair.com/",
+          "position": "Senior UI Developer",
+          "location": "Charlottesville, Virginia",
+          "description": "Silverchair designs and develops semantic technologies, publishing platforms, and e-learning solutions to scientific, technical and medical publishers, academic medical centers, professional societies, and the federal government in the United States."
+        },
+        {
+          "timeframe": {
+            "start": "April 2009",
+            "end": "April 2011"
+          },
+          "agency": "Enviroapps",
+          "links": "http://www.enviroapps.com/",
+          "position": "UI Developer",
+          "location": "Orlando, Florida",
+          "description": "EnviroApps bring solutions to modern challenges using environment friendly technologies empowered by human imagination and care for the future generation. Their process of engineering development and deployment follow the GISTS (Green Infra Structure Technology Solutions) architecture to be eco-efficient and help transforming our engineers’ imaginative ideas in to products and solutions."
+        }
+      ],
+      "education": [
+        {
+          "timeframe": {
+            "start": "August 2006",
+            "end": "June 2009"
+          },
+          "agency": "Everest University",
+          "links": "https://en.wikipedia.org/wiki/Everest_University",
+          "position": "Master of Business Administration",
+          "location": "Orlando, Florida",
+          "description": ""
+        },
+        {
+          "timeframe": {
+            "start": "August 2002",
+            "end": "August 2006"
+          },
+          "agency": "Kantipur City College",
+          "links": "http://kcc.edu.np/",
+          "location": "Kathmandu, Nepal",
+          "position": "Bachelor of Computer Application",
+          "description": ""
+        },
+        {
+          "timeframe": {
+            "start": "March 2000",
+            "end": "March 2002"
+          },
+          "agency": "Kathmandu Model College",
+          "links": "http://www.ktmmodelcollege.edu.np/",
+          "position": "High School",
+          "location": "Kathmandu, Nepal",
+          "description": ""
+        }
+      ]
+    },
+    "saraswatis": {
+      "firstname": "Saraswati",
+      "lastname": "Sherpa",
+      "position": "Office Manager",
+      "contact": {
+        "phone": "3219486072",
+        "email": "simronsherpa@gmail.com",
+        "www": "/sarswati-sherpa",
+        "social": {
+          "linkedin": ""
+        }
+      },
+      "skillset": {},
+      "objective": "Successful Office Manager",
+      "experience": [
+        {
+          "timeframe": {
+            "start": "February 2017",
+            "end": "Present"
+          },
+          "agency": "Bodhi Systems",
+          "links": "http://www.bodhisystems.com/",
+          "position": "Office Manager",
+          "location": "Charlottesville, Virginia",
+          "description": ""
+        }
+      ],
+      "education": [
+        {
+          "timeframe": {
+            "start": "January 2007",
+            "end": "January 2011"
+          },
+          "agency": "Valencia Community College",
+          "links": "",
+          "position": "Associate of Arts",
+          "location": "Orlando, Florida",
+          "description": ""
+        },
+        {
+          "timeframe": {
+            "start": "August 2006",
+            "end": "March 2004"
+          },
+          "agency": "Kanya Higher Secondary School",
+          "links": "",
+          "location": "Kathmandu, Nepal",
+          "position": "High School",
+          "description": ""
+        }
+      ]
+    },
+    "shangrilam": {
+      "firstname": "Shangrila",
+      "lastname": "Maharjan",
+      "position": "1st Grader",
+      "contact": {
+        "phone": "3219486072",
+        "email": "ishangrila12@gmail.com",
+        "www": "/shangrila-maharjan",
+        "social": {
+          "linkedin": ""
+        }
+      },
+      "skillset": {},
+      "objective": "To complete First grade with good marks",
+      "experience": [],
+      "education": [
+        {
+          "timeframe": {
+            "start": "August 2018",
+            "end": "June 2019"
+          },
+          "agency": "Hollymeade Elementary School",
+          "links": "",
+          "location": "Charlottesville, Virginia",
+          "position": "1st Grade",
+          "description": ""
+        },
+        {
+          "timeframe": {
+            "start": "August 2017",
+            "end": "June 2018"
+          },
+          "agency": "Greer Elementary School",
+          "links": "",
+          "position": "Kintergarten",
+          "location": "Charlottesville, Virginia",
+          "description": ""
+        }
+      ]
+    },
+    "nirvaanm": {
+      "firstname": "Nirvaan",
+      "lastname": "Maharjan",
+      "position": "",
+      "contact": {
+        "phone": "3219486072",
+        "email": "submjn@gmail.com",
+        "www": "/nirvaan-maharjan",
+        "social": {
+          "linkedin": ""
+        }
+      },
+      "skillset": {},
+      "objective": "To be a good kid",
+      "experience": [],
+      "education": []
+    }
+  }
+}
